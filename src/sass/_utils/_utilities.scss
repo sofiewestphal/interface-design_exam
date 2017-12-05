@@ -1,0 +1,53 @@
+@charset "UTF-8";
+$baseSize: 8px;
+
+// padding
+.u_pb-xs {padding-bottom: $baseSize !important;}
+.u_pb-sm {padding-bottom: $baseSize * 2 !important;}
+.u_pb-md {padding-bottom: $baseSize * 3 !important;}
+.u_pb-lg {padding-bottom: $baseSize * 4 !important;}
+.u_pb-xl {padding-bottom: $baseSize * 5 !important;}
+.u_pt-xs {padding-top: $baseSize !important;}
+.u_pt-sm {padding-top: $baseSize * 2 !important;}
+.u_pt-md {padding-top: $baseSize * 3 !important;}
+.u_pt-lg {padding-top: $baseSize * 4 !important;}
+.u_pt-xl {padding-top: $baseSize * 5 !important;}
+.u_pl-xs {padding-left: $baseSize !important;}
+.u_pl-sm {padding-left: $baseSize * 2 !important;}
+.u_pl-md {padding-left: $baseSize * 3 !important;}
+.u_pl-lg {padding-left: $baseSize * 4 !important;}
+.u_pl-xl {padding-left: $baseSize * 5 !important;}
+.u_pr-xs {padding-right: $baseSize !important;}
+.u_pr-sm {padding-right: $baseSize * 2 !important;}
+.u_pr-md {padding-right: $baseSize * 3 !important;}
+.u_pr-lg {padding-right: $baseSize * 4 !important;}
+.u_pr-xl {padding-right: $baseSize * 5 !important;}
+
+// margin
+.u_mb-xs {margin-bottom: $baseSize !important;}
+.u_mb-sm {margin-bottom: $baseSize * 2 !important;}
+.u_mb-md {margin-bottom: $baseSize * 3 !important;}
+.u_mb-lg {margin-bottom: $baseSize * 4 !important;}
+.u_mb-xl {margin-bottom: $baseSize * 5 !important;}
+.u_mb-xxl {margin-bottom: $baseSize * 10 !important;}
+.u_mt-xs {margin-top: $baseSize !important;}
+.u_mt-sm {margin-top: $baseSize * 2 !important;}
+.u_mt-md {margin-top: $baseSize * 3 !important;}
+.u_mt-lg {margin-top: $baseSize * 4 !important;}
+.u_mt-xl {margin-top: $baseSize * 5 !important;}
+.u_ml-xs {margin-left: $baseSize !important;}
+.u_ml-sm {margin-left: $baseSize * 2 !important;}
+.u_ml-md {margin-left: $baseSize * 3 !important;}
+.u_ml-lg {margin-left: $baseSize * 4 !important;}
+.u_ml-xl {margin-left: $baseSize * 5 !important;}
+.u_mr-xs {margin-right: $baseSize !important;}
+.u_mr-sm {margin-right: $baseSize * 2 !important;}
+.u_mr-md {margin-right: $baseSize * 3 !important;}
+.u_mr-lg {margin-right: $baseSize * 4 !important;}
+.u_mr-xl {margin-right: $baseSize * 5 !important; }
+
+// Display properties
+.u_block {display: block;}
+.u_inline-block {display: inline-block;}
+.u_hidden {display: none;}
+

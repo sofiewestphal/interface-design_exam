@@ -2,7 +2,7 @@ var gulp = require('gulp'),
 sass = require('gulp-sass'),
 browserSync = require('browser-sync').create(),
 useref = require('gulp-useref'),
-uglify = require('gulp-uglify'),np
+uglify = require('gulp-uglify'),
 gulpIf = require('gulp-if'),
 postcss = require('gulp-postcss'),
 cssnano = require('cssnano'),
@@ -11,19 +11,20 @@ autoprefixer = require('autoprefixer');
 // Compiles sass
 gulp.task('sass', function() {
   return gulp.src('src/sass/**/*.scss')
-  .pipe(sass())
-  .pipe(gulp.dest('src/css'))
-  .pipe(browserSync.stream())
+    .pipe(sass())
+    .pipe(gulp.dest('src/css'))
+    .pipe(browserSync.stream())
 })
 
 // Make production build of css
-gulp.task('css', function() {
+gulp.task('css-conc-min', function() {
   var plugins = [
     autoprefixer({browsers: ['last 1 version']}),
     cssnano()
   ]
-  return gulp.src('src/**/*.css')
-    .pipe(postcss(plugins))
+  return gulp.src('src/*.html')
+    .pipe(useref())
+    .pipe(gulpIf('*.css', postcss(plugins)))
     .pipe(gulp.dest('dist'))
 })
 
@@ -57,4 +58,6 @@ gulp.task('js-conc-min', function(){
 gulp.task('watch', ['browserSync'], function() {
   gulp.watch('src/*.html', browserSync.reload)
   gulp.watch('src/sass/**/*.scss', ['sass'])
+  gulp.watch('src/js/**/*.js', ['js-conc-min'])
+  gulp.watch('src/css/**/*.css', ['css-conc-min'])
 })
