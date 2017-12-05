@@ -1,25 +1,221 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Gulp Optimization</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Open+Sans" rel="stylesheet">
 	<!-- build:css css/bundle.css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<!-- endbuild -->
 </head>
+
 <body>
-	<h1>Primary heading</h1>
-	<h2>askdhasd</h2>
-	<h3>h3 another heading</h3>
-	<h4>h3 another heading</h4>
-	<p>Test tst test text</p>
-	<p class="meta">Test test meta text</p>
- 
+	<div class="nav-bar">
+		<a class="logo">
+			<span class="u_bold">dev</span>ent
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a class="active" href="">Create event</a>
+				</li>
+				<li>
+					<a href="">Find event</a>
+				</li>
+				<li>
+					<a href="">My event</a>
+				</li>
+				<li>
+					<a href="">Trophies</a>
+				</li>
+				<li class="menu-user">
+					<a href="">
+						<div class="profile-picture xs" style="background-image: url('images/henningjensen.jpg');"></div>
+						Henning Jensen
+						<svg><use href="#md-arrow-drop-down"></use></svg>
+					</a>
+
+
+					<div class="box dropdown">
+						<a href="">
+							<svg><use xlink:href="#md-person"></use></svg>
+							My profile
+						</a>
+						<a href="">
+							<svg><use xlink:href="#md-sign-out"></use></svg>
+							Log out
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+
+	<div class="container u_mb-xl u_mt-xl">
+
+
+
+
+		<div class="box u_mb-xl">
+			<h1>Primary heading</h1>
+			<h2>askdhasd</h2>
+			<h3>h3 another heading</h3>
+			<h4>h3 another heading</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis quam diam. Pellentesque diam neque, iaculis mollis
+				tellus vel, placerat faucibus nisl. Sed eget laoreet orci. Proin ornare pulvinar orci. Nullam vestibulum convallis risus
+				ut scelerisque. Maecenas fermentum, arcu sed semper commodo, quam arcu lacinia leo, sed aliquet leo neque vitae lacus.
+				Nullam consequat laoreet tellus, nec finibus mi efficitur vitae. Nulla venenatis cursus bibendum. Vivamus fringilla vulputate
+				varius. Nullam accumsan <a href="">Inline link</a> leo mattis sollicitudin dignissim. Fusce sit amet sapien ut turpis ornare tincidunt. Integer
+				viverra tempor pellentesque. Ut in felis ligula. Donec pulvinar, nunc sed venenatis laoreet, augue arcu rutrum dui, vitae
+				pellentesque metus magna nec ex. Ut venenatis tellus tellus, sit amet aliquet sapien pellentesque et. Nam non mattis
+				magna. Aliquam venenatis ex id velit viverra congue. Curabitur eleifend nec neque non gravida. Integer eget metus id
+				tellus bibendum facilisis eget et lectus. Mauris semper sollicitudin ex, ac elementum risus tempus vel. Sed eget congue
+				orci.</p>
+			<p class="meta">Test test meta text</p>
+			<p class="badge">Looking for sponsors</p>
+			
+			<a class="big" href="">Big inline link</a>
+		</div>
+
+		<div class="box">
+			<h3>h3 another heading</h3>
+			<p class="badge">Looking for sponsors</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis quod eos ipsum odio, labore porro eligendi
+				dolorem repellendus, sunt impedit soluta ullam vel aut necessitatibus nihil totam officia et.</p>
+			<p class="meta">11/2-2017</p>
+			<button class="grey outline">Button</button>
+			<button class="grey fill">Button</button>
+			<button class="blue outline">Button</button>
+			<button class="blue fill">Button</button>
+			<button class="orange outline">Button</button>
+			<button class="orange fill">Button</button>
+
+			<br>
+			<br>
+
+			<button class="large grey outline">Button</button>
+			<button class="large grey fill">Button</button>
+			<button class="large blue outline">Button</button>
+			<button class="large blue fill">Button</button>
+			<button class="large orange outline">Button</button>
+			<button class="large orange fill">Button</button>
+
+			<div class="action-bar">
+				<a href="" class="big u_mr-sm">
+					<div>
+						Favorite
+					</div>
+					<svg><use href="#md-favorite"></use></svg>
+				</a>
+				<a href="" class="big">
+					<div>
+						See more
+					</div>
+					<svg><use href="#md-arrow-forward"></use></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid-container">
+		<div class="box col col-33">
+			<h3>Profile pictures</h3>
+			<div class="profile-picture u_mb-md xs" style="background-image: url('images/henningjensen.jpg')"></div>
+			<div class="profile-picture u_mb-md sm" style="background-image: url('images/henningjensen.jpg')"></div>
+			<div class="profile-picture u_mb-md md" style="background-image: url('images/henningjensen.jpg')"></div>
+			<div class="profile-picture u_mb-md lg" style="background-image: url('images/henningjensen.jpg')"></div>
+			<div class="profile-picture xl" style="background-image: url('images/henningjensen.jpg')"></div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h1>Grid</h1>
+	</div>
+
+	<div class="grid-container">
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-66">
+			<h3>col-66</h3>
+		</div>
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-100">
+			<h3>col-100</h3>
+		</div>
+	</div>
+
+	<div class="u_mt-xl container small">
+		<h1>Grid small</h1>
+	</div>
+
+	<div class="grid-container small">
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-66">
+			<h3>col-66</h3>
+		</div>
+		<div class="box col col-33">
+			<h3>col-33</h3>
+		</div>
+		<div class="box col col-100">
+			<h3>col-100</h3>
+		</div>
+	</div>
+
+	<div class="container u_mb-xl u_mt-xl"></div>
+
+
+
 	<!-- build:js js/bundle.js -->
 	<script src="js/lib/a.js"></script>
-	<script src="js/lib/b.js"></script> 
+	<script src="js/lib/b.js"></script>
 	<script src="js/main.js"></script>
 	<!-- endbuild -->
+
+
+	<svg class="u_hidden" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<g id="md-favorite">
+				<path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
+			</g>
+			<g id="md-arrow-forward">
+				<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+			</g>
+			<g id="md-arrow-drop-down">
+				<path d="M7 10l5 5 5-5z"/>
+			</g>
+			<g id="md-person">
+				<path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+			</g>
+			<g id="md-sign-out">
+				<polygon points="18.3,8 18.3,11 7.3,11 7.3,13 18.3,13 18.3,16 22.3,12 	"/>
+				<path d="M13,19H3V5h10v4.3h2V5c0-1.1-0.9-2-2-2H3C1.9,3,1,3.9,1,5v14c0,1.1,0.9,2,2,2h10c1.1,0,2-0.9,2-2v-4.4h-2V19z"/>
+			</g>
+
+		</defs>
+	</svg>
+
 </body>
+
 </html>

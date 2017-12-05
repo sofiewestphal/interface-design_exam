@@ -2,6 +2,16 @@
 $baseSize: 8px;
 
 // padding
+.u_px-xs {padding-left: $baseSize !important; padding-right: $baseSize !important;}
+.u_px-sm {padding-left: $baseSize * 2 !important; padding-right: $baseSize * 2 !important;}
+.u_px-md {padding-left: $baseSize * 3 !important; padding-right: $baseSize * 3 !important;}
+.u_px-lg {padding-left: $baseSize * 4 !important; padding-right: $baseSize * 4 !important;}
+.u_px-xl {padding-left: $baseSize * 5 !important; padding-right: $baseSize * 5 !important;}
+.u_py-xs {padding-top: $baseSize !important; padding-bottom: $baseSize !important;}
+.u_py-sm {padding-top: $baseSize * 2 !important; padding-bottom: $baseSize * 2 !important;}
+.u_py-md {padding-top: $baseSize * 3 !important; padding-bottom: $baseSize * 3 !important;}
+.u_py-lg {padding-top: $baseSize * 4 !important; padding-bottom: $baseSize * 4 !important;}
+.u_py-xl {padding-top: $baseSize * 5 !important; padding-bottom: $baseSize * 5 !important;}
 .u_pb-xs {padding-bottom: $baseSize !important;}
 .u_pb-sm {padding-bottom: $baseSize * 2 !important;}
 .u_pb-md {padding-bottom: $baseSize * 3 !important;}
@@ -24,6 +34,16 @@ $baseSize: 8px;
 .u_pr-xl {padding-right: $baseSize * 5 !important;}
 
 // margin
+.u_mx-xs {margin-left: $baseSize !important; margin-right: $baseSize !important;}
+.u_mx-sm {margin-left: $baseSize * 2 !important; margin-right: $baseSize * 2 !important;}
+.u_mx-md {margin-left: $baseSize * 3 !important; margin-right: $baseSize * 3 !important;}
+.u_mx-lg {margin-left: $baseSize * 4 !important; margin-right: $baseSize * 4 !important;}
+.u_mx-xl {margin-left: $baseSize * 5 !important; margin-right: $baseSize * 5 !important;}
+.u_my-xs {margin-top: $baseSize !important; margin-bottom: $baseSize !important;}
+.u_my-sm {margin-top: $baseSize * 2 !important; margin-bottom: $baseSize * 2 !important;}
+.u_my-md {margin-top: $baseSize * 3 !important; margin-bottom: $baseSize * 3 !important;}
+.u_my-lg {margin-top: $baseSize * 4 !important; margin-bottom: $baseSize * 4 !important;}
+.u_my-xl {margin-top: $baseSize * 5 !important; margin-bottom: $baseSize * 5 !important;}
 .u_mb-xs {margin-bottom: $baseSize !important;}
 .u_mb-sm {margin-bottom: $baseSize * 2 !important;}
 .u_mb-md {margin-bottom: $baseSize * 3 !important;}
@@ -50,4 +70,5 @@ $baseSize: 8px;
 .u_block {display: block;}
 .u_inline-block {display: inline-block;}
 .u_hidden {display: none;}
+.u_bold {font-weight: 700;}
 
