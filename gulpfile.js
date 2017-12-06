@@ -6,7 +6,8 @@ uglify = require('gulp-uglify'),
 gulpIf = require('gulp-if'),
 postcss = require('gulp-postcss'),
 cssnano = require('cssnano'),
-autoprefixer = require('autoprefixer');
+autoprefixer = require('autoprefixer'),
+imagemin = require('gulp-imagemin');
 
 // Compiles sass
 gulp.task('sass', function() {
@@ -36,7 +37,9 @@ gulp.task('css-conc-min', function() {
 // })
 
 gulp.task('image-min', function() {
-
+  return gulp.src('src/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'))
 })
 
 gulp.task('browserSync', function() {
@@ -60,4 +63,5 @@ gulp.task('watch', ['browserSync'], function() {
   gulp.watch('src/sass/**/*.scss', ['sass'])
   gulp.watch('src/js/**/*.js', ['js-conc-min'])
   gulp.watch('src/css/**/*.css', ['css-conc-min'])
+  gulp.watch('src/images/*', ['image-min'])
 })
