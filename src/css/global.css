@@ -214,6 +214,39 @@
 .u_bold {
   font-weight: 700; }
 
+.u_text-center {
+  text-align: center; }
+
+#homeBg {
+  background-image: url("../images/devent-home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 50px);
+  overflow: scoll;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  #homeBg .blue-tint {
+    background: linear-gradient(135deg, rgba(12, 161, 211, 0.6) 0%, #0B6AD6 100%);
+    opacity: .45;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  #homeBg .home-content {
+    color: #FFFFFF;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20rem;
+    z-index: 1; }
+    #homeBg .home-content button {
+      padding: 1rem 3.5rem 1.25rem 3.5rem; }
+  #homeBg .home-header {
+    font-size: 4rem; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -384,7 +417,8 @@ div.nav-bar {
   padding: 0 0 0 20px;
   width: 100%;
   background-color: #FFFFFF;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1; }
   div.nav-bar a.logo {
     color: #101316;
     font-family: "Montserrat", sans-serif;

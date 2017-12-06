@@ -1,5 +1,6 @@
 @import '_utils/_vars.scss';
 @import '_utils/_utilities.scss';
+@import '_components/_home.scss';
 
 * {
   box-sizing: border-box;
@@ -239,6 +240,7 @@ div.nav-bar {
   width: 100%;
   background-color: $white;
   box-shadow: 0 3px 6px rgba(0,0,0,.15);
+  z-index: 1;
 
   a.logo {
     color: $black;
