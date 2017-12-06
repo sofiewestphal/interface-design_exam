@@ -214,6 +214,33 @@
 .u_bold {
   font-weight: 700; }
 
+.u_text-center {
+  text-align: center; }
+
+.u_block-center {
+  display: block;
+  margin: 0 auto; }
+
+.trophy .trophy-icon {
+  width: 100%;
+  max-width: 125px; }
+
+.trophy:not(.obtained) .check-div {
+  display: none; }
+
+.trophy:not(.obtained) svg {
+  fill: #65707A; }
+
+.trophy.obtained .check-div {
+  position: relative; }
+  .trophy.obtained .check-div .check-icon {
+    max-width: 50px;
+    position: absolute;
+    right: 0; }
+
+.trophy.obtained svg {
+  fill: #0B6AD6; }
+
 * {
   box-sizing: border-box;
   margin: 0;
