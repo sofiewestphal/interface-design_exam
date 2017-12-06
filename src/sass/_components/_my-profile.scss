@@ -1,0 +1,54 @@
+.my-profile{
+
+    .col-50 {   
+        &.mobileFullWidth {
+            @media screen and (max-width: $breakpoint-sm) {
+            flex-basis: calc(100% - 20px);        
+            }
+        }
+    }
+
+    svg {
+        height: 24px;
+        width: 24px;
+        transform: scale(0.8);
+    }
+    .boxProfileInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxEvent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .linkSeeMore{
+                margin-top: $baseSize;
+            }
+
+            > :last-child{
+                align-self: flex-end;
+            }
+        }
+
+        .linkSeeMore{
+            min-width: 125px;
+        }
+
+        .iconText{
+            display: flex;
+        }
+    }
+
+    .boxBottomLink {
+        display: flex;
+        justify-content: center;
+    }
+}
