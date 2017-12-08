@@ -217,16 +217,17 @@
 .u_v-align-top {
   vertical-align: top; }
 
-.speaker {
+.speaker, .schedule-block {
   display: flex;
   margin: 2rem 0; }
-  .speaker .speaker-info {
-    flex-grow: 1;
-    margin-left: .75rem; }
-    .speaker .speaker-info h4, .speaker .speaker-info p {
+  .speaker .speaker-info, .speaker .schedule-info, .schedule-block .speaker-info, .schedule-block .schedule-info {
+    flex-grow: 1; }
+    .speaker .speaker-info h4, .speaker .speaker-info p, .speaker .schedule-info h4, .speaker .schedule-info p, .schedule-block .speaker-info h4, .schedule-block .speaker-info p, .schedule-block .schedule-info h4, .schedule-block .schedule-info p {
       line-height: .95rem; }
-    .speaker .speaker-info button {
+    .speaker .speaker-info button, .speaker .schedule-info button, .schedule-block .speaker-info button, .schedule-block .schedule-info button {
       font-weight: bold; }
+  .speaker .speaker-info, .schedule-block .speaker-info {
+    margin-left: .75rem; }
 
 .facilities {
   display: flex;

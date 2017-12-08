@@ -1,14 +1,16 @@
-.speaker{
+.speaker, .schedule-block{
    display: flex;
    margin:2rem 0;
-   .speaker-info{
+   .speaker-info, .schedule-info{
       flex-grow: 1;
-      margin-left: .75rem;
       h4{
          line-height: .95rem;
       }
       button{
          font-weight: bold;
       }
+   }
+   .speaker-info{
+      margin-left: .75rem;
    }
 } 
