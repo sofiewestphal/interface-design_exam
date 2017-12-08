@@ -214,6 +214,64 @@
 .u_bold {
   font-weight: 700; }
 
+.create-event #boxBasicInformation input, .create-event #boxBasicInformation textarea, .create-event #boxBasicInformation select {
+  border-style: none; }
+
+.create-event label {
+  cursor: text; }
+  .create-event label p {
+    display: inline-block; }
+
+.create-event .col {
+  display: flex;
+  flex-direction: column; }
+
+.create-event button {
+  align-self: flex-end; }
+
+.create-event .inputCheckbox {
+  width: auto; }
+
+.create-event input, .create-event select, .create-event textarea {
+  width: 100%;
+  padding: 4px 6px 6px 6px; }
+
+.create-event #frmTimeDate, .create-event #frmTimeTitle, .create-event #frmSkillSpeakerSponsor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px; }
+  .create-event #frmTimeDate label, .create-event #frmTimeTitle label, .create-event #frmSkillSpeakerSponsor label {
+    width: calc(25% - 20px);
+    margin: 0 10px;
+    min-width: 85px; }
+
+.create-event #frmTimeTitle {
+  flex-wrap: nowrap; }
+  .create-event #frmTimeTitle label {
+    margin: 0 10px; }
+  .create-event #frmTimeTitle #lblScheduleTime {
+    flex-basis: 30%; }
+  .create-event #frmTimeTitle #lblScheduleTitle {
+    flex-basis: 70%; }
+
+.create-event #frmSkillSpeakerSponsor div {
+  margin: 0 10px; }
+
+.create-event .boxSpeaker svg {
+  width: 24px;
+  height: 24px; }
+
+.create-event .boxSpeaker .delete-bar {
+  display: flex;
+  justify-content: space-between; }
+
+.create-event .boxSpeaker .scheduleTimeTitle {
+  display: flex; }
+
+.create-event #boxFacilities {
+  display: flex;
+  width: 100%; }
+
 * {
   box-sizing: border-box;
   margin: 0;

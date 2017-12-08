@@ -1,0 +1,96 @@
+.create-event {
+    #boxBasicInformation {
+        input, textarea, select{
+            // background-color: rgba(255,255,255,0.7);
+            border-style: none;
+        }
+    }
+    label {
+        cursor: text;
+
+        p {
+            display: inline-block;
+        }
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        align-self: flex-end;
+    }
+
+    .inputCheckbox{
+        width: auto;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 4px 6px 6px 6px;
+    }
+
+    // .inputDescription{
+    //     height: 100px;
+    // }
+
+    #frmTimeDate{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+
+        label {
+            width: calc(25% - 20px);
+            margin: 0 10px;
+            min-width: 85px;
+        }
+    }
+
+    #frmTimeTitle{
+        @extend #frmTimeDate;
+        flex-wrap: nowrap;
+
+        label{
+            margin: 0 10px;
+        }
+
+        #lblScheduleTime{
+            flex-basis: 30%;
+        }
+
+        #lblScheduleTitle{
+            flex-basis: 70%;
+        }
+    }
+
+    #frmSkillSpeakerSponsor{
+        @extend #frmTimeDate;
+
+        div{
+            margin: 0 10px;
+        }
+    }
+
+    .boxSpeaker{
+        svg{
+            width: 24px;
+            height: 24px;
+        }
+
+        .delete-bar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .scheduleTimeTitle{
+            display: flex;
+        }
+    }
+
+    #boxFacilities{
+        display: flex;
+        width: 100%;
+
+    }
+}
