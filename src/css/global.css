@@ -264,6 +264,23 @@
       .facilities .facility .facility-info h4, .facilities .facility .facility-info p {
         line-height: .95rem; }
 
+.about-event {
+  display: flex;
+  flex-direction: column; }
+  .about-event p {
+    font-size: .95rem;
+    display: flex;
+    line-height: 1.2rem;
+    margin: .5rem 0; }
+    .about-event p svg {
+      width: 18px;
+      height: 18px;
+      margin-right: .5rem;
+      fill: #434A51; }
+
+.description-box p {
+  font-size: .85rem; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -373,6 +390,9 @@ button {
   button.small {
     padding: 0.25rem .65rem 0.25rem .65rem;
     font-size: .75rem; }
+  button.block {
+    display: block;
+    width: 100%; }
   button.grey.outline {
     color: #65707A;
     border-color: #65707A; }

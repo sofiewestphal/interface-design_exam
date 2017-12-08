@@ -2,6 +2,8 @@
 @import '_utils/_utilities.scss';
 @import '_components/_speakers.scss';
 @import '_components/_facilities.scss';
+@import '_components/_about-event.scss';
+@import '_components/_description.scss';
 
 * {
   box-sizing: border-box;
@@ -154,6 +156,10 @@ button {
   &.small {
    padding: 0.25rem .65rem 0.25rem .65rem;
    font-size: .75rem;
+ }
+ &.block {
+    display:block;
+    width:100%;
  }
 
   &.grey.outline {
