@@ -1,5 +1,6 @@
 @import '_utils/_vars.scss';
 @import '_utils/_utilities.scss';
+@import '_components/_speakers.scss';
 
 * {
   box-sizing: border-box;
@@ -149,6 +150,10 @@ button {
     padding: 0.65rem 1.5rem 0.75rem 1.5rem;
     font-size: 1.15rem;
   }
+  &.small {
+   padding: 0.25rem .65rem 0.25rem .65rem;
+   font-size: .75rem;
+ }
 
   &.grey.outline {
     color: $medium-grey;

@@ -214,6 +214,20 @@
 .u_bold {
   font-weight: 700; }
 
+.u_v-align-top {
+  vertical-align: top; }
+
+.speaker {
+  display: flex;
+  margin: 2rem 0; }
+  .speaker .speaker-info {
+    flex-grow: 1;
+    margin-left: .75rem; }
+    .speaker .speaker-info h4, .speaker .speaker-info p {
+      line-height: .95rem; }
+    .speaker .speaker-info button {
+      font-weight: bold; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -320,6 +334,9 @@ button {
   button.large {
     padding: 0.65rem 1.5rem 0.75rem 1.5rem;
     font-size: 1.15rem; }
+  button.small {
+    padding: 0.25rem .65rem 0.25rem .65rem;
+    font-size: .75rem; }
   button.grey.outline {
     color: #65707A;
     border-color: #65707A; }

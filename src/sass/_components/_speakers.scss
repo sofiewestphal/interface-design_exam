@@ -1,0 +1,14 @@
+.speaker{
+   display: flex;
+   margin:2rem 0;
+   .speaker-info{
+      flex-grow: 1;
+      margin-left: .75rem;
+      h4{
+         line-height: .95rem;
+      }
+      button{
+         font-weight: bold;
+      }
+   }
+} 
