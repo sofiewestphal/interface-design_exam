@@ -1,12 +1,14 @@
 .event-filters {
   user-select: none;
   overflow: hidden;
+  min-width: 300px; // Dummy rule - remove
   
   .filter-container.expanded {
     .filter-content {
-      padding: .5rem 1rem;
+      // padding: .5rem 1rem;
+      padding: .5rem 1rem; 
       max-height: 400px;
-      overflow-y: scroll;
+      overflow-y: auto;
       -webkit-overflow-scrolling: touch;
       border-bottom: 1px $light-grey solid;
       transition: max-height 120ms ease, 
@@ -14,14 +16,11 @@
                   padding-bottom 180ms ease, 
                   border-bottom 180ms ease;
     }
-
-    svg {
+    .filter-title svg {
       transform: rotate(0deg);
       transition: transform 120ms ease;
     }
   }
-
-
 
   .filter-title {
     display: flex;
@@ -31,29 +30,168 @@
       color: $blue;
       fill: $blue;
     }
+
+    svg {
+      transform: rotate(90deg);
+    
+    }
   }
 
   .filter-content {
     // Uneven margin/padding as a scrollbar-hiding hack
-    margin: .5rem -3rem .5rem -1rem; 
-    padding: 0rem 3rem 0rem 1rem;    
+    margin: .5rem -1rem;
+    padding: 0rem 1rem;    
     max-height: 1px;
     border-top: 1px $light-grey solid;
     border-bottom: 0px $light-grey solid;
     background-color: $off-white-lighter;
-    color: $medium-grey;
     overflow: hidden;
     transition: max-height 120ms ease, 
                 padding-top 180ms ease, 
                 padding-bottom 180ms ease, 
                 border-bottom 180ms ease;
+
+
+    //
+    // Specific sections that needs special styling
+    //
+    .distance-container, .when-row, .skill-level-row, .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    // Where
+    .distance-container {
+      input {
+        flex: 0 1 80px;
+        margin: .45rem;
+      }
+    }
+
+    // When
+    .when-row {
+      label {
+        flex: 0 0 50px;
+      }
+    }
+    
+    // Skill level
+    .skill-level-row {
+      label {
+        flex: 0 0 80px;
+      }
+    }
+
+    // Facilities 
+    .checkbox-wrapper {
+      input {
+        flex: 0 0 25px;
+      }
+
+      label {
+        margin-top: .1rem;
+        flex: 1 1 100%;
+        padding: .0rem 0;
+      }
+      input:checked + label {
+        color: $blue
+      }
+    }
+
+    // Organizers
+    .search-wrapper {
+      position: relative;
+
+      input {
+        padding: 0.3rem;
+      }
+
+      svg {
+        position: absolute;
+        padding-right: .3rem;
+        padding-left: .2rem;
+        right: .1rem;
+        top: .5rem;
+        transform: scale(.7);
+        background-color: $white;
+        
+      }
+
+    }
+
+    .btnSeeMore {
+      font-size: .85rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 0;
+      border: 0px;
+      color: $blue;
+      fill: $blue;
+
+      svg {
+        margin-left: -2px;
+        margin-right: 2px;
+        fill: $blue;
+        transform: scale(.7);
+      }
+    }
+
+
   }
+
+  // General base-rules
+  a.big {
+    float: right;
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+
 
   svg {
     width: 24px;
     height: 24px;
-    transform: rotate(90deg);
     transform-origin: center;
     transition: transform 120ms ease;
+  }
+
+  input, label, select {
+    font-size: .85rem;
+    margin: .25rem 0;
+    color: $medium-grey;
+    font-family: $openSans;
+    
+  } 
+  input {
+    padding: .5rem;
+    width: 100%;
+    background-color: $white;
+    border: 1px $light-grey solid;
+    border-radius: $border-radius;
+  }
+  label {
+    display: inline-block;
+  }
+  select {
+    display: block;
+    width: 100%;
+    background-color: $white;
+    border: 1px $light-grey solid;
+    border-radius: $border-radius;
+    padding: .5rem;
+    -webkit-appearance: none;
+  }
+  .select-wrapper {
+    display: block;
+    width: 100%;
+    position: relative;
+    svg {
+      position: absolute;
+      right: .5rem;
+      top: .6rem;
+    }
   }
 }
