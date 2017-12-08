@@ -1,5 +1,6 @@
 @import '_utils/_vars.scss';
 @import '_utils/_utilities.scss';
+@import '_components/_modal.scss';
 
 * {
   box-sizing: border-box;
@@ -180,7 +181,6 @@ button {
     border-color: $orange;
   }
 }
-
 
 // Box
 .box {
