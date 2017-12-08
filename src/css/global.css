@@ -281,6 +281,56 @@
 .description-box p {
   font-size: .85rem; }
 
+.comment-section .new-comment {
+  display: flex; }
+  .comment-section .new-comment .write-comment {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    align-content: flex-start; }
+    .comment-section .new-comment .write-comment textarea {
+      flex-grow: 1;
+      min-height: 6rem;
+      max-width: 100%;
+      padding: .5rem;
+      border-radius: 2px;
+      border: 1px solid #CED6DE;
+      font-family: "Open Sans", sans-serif;
+      resize: vertical; }
+    .comment-section .new-comment .write-comment button {
+      margin: 0 1rem;
+      flex-basis: 25%; }
+  .comment-section .new-comment .profile-picture {
+    margin-right: 1rem; }
+
+.comment-section .comment {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column; }
+  .comment-section .comment .comment-content {
+    display: flex;
+    margin-bottom: .5rem; }
+  .comment-section .comment .profile-picture {
+    margin-right: 1rem;
+    flex-shrink: 0; }
+  .comment-section .comment h4, .comment-section .comment p {
+    font-weight: bold; }
+    .comment-section .comment h4 small, .comment-section .comment p small {
+      font-weight: normal; }
+  .comment-section .comment p {
+    font-weight: normal; }
+  .comment-section .comment .comment {
+    margin-left: calc(48px + 1rem); }
+
+.comment-section .action-bar {
+  border-width: 2px !important; }
+  .comment-section .action-bar .comments {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap; }
+
 * {
   box-sizing: border-box;
   margin: 0;
