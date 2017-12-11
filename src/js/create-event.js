@@ -5,9 +5,16 @@
 // });
 
 btnAddImage.addEventListener("click", function(){
-    console.log("I wanna save a new image");
-    var sImageSrc = txtImageSrc.value;
-    console.log(sImageSrc);
+    var boxSpeaker = '<div class="boxSpeaker box col col-50">\
+                        <div class="delete-bar u_mt-sm">\
+                            <div>\
+                                <svg class="moveElementUp"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
+                                <svg class="moveElementDown"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-down"></use></svg>\
+                            </div>\
+                            <button class="orange outline">Delete</button>\
+                        </div>\
+                    </div>'
+boxFacilities.insertAdjacentHTML('beforeend', boxImages);
 });
 
 
@@ -19,8 +26,8 @@ btnAddFacility.addEventListener("click", function(){
                         <p>'+ sFacilityDescription +'</p>\
                         <div class="delete-bar u_mt-sm">\
                             <div>\
-                                <svg><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
-                                <svg><use viewBox="0 0 24 24" href="#md-keyboard-arrow-down"></use></svg>\
+                                <svg class="moveElementUp"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
+                                <svg class="moveElementDown"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-down"></use></svg>\
                             </div>\
                             <button class="orange outline">Delete</button>\
                         </div>\
@@ -52,8 +59,8 @@ btnAddSponsor.addEventListener("click", function(){
                         <p>'+ sSponsorName +'</p>\
                         <div class="delete-bar u_mt-sm">\
                             <div>\
-                                <svg><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
-                                <svg><use viewBox="0 0 24 24" href="#md-keyboard-arrow-down"></use></svg>\
+                                <svg class="moveElementUp"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
+                                <svg class="moveElementDown"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-down"></use></svg>\
                             </div>\
                             <button class="orange outline">Delete</button>\
                         </div>\
@@ -74,8 +81,8 @@ btnAddScheduleBlock.addEventListener("click", function(){
                         <p>'+ sScheduleDescription +'</p>\
                         <div class="delete-bar u_mt-sm">\
                             <div>\
-                                <svg><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
-                                <svg><use viewBox="0 0 24 24" href="#md-keyboard-arrow-down"></use></svg>\
+                                <svg class="moveElementUp"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
+                                <svg class="moveElementDown"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-down"></use></svg>\
                             </div>\
                             <button class="orange outline">Delete</button>\
                         </div>\
@@ -86,11 +93,11 @@ btnAddScheduleBlock.addEventListener("click", function(){
     txtScheduleDescription.value = "";
 });
 
-document.addEventListener("click", function(e){
-    if(e.target.classList.contains("moveElementUp")){
+// document.addEventListener("click", function(e){
+//     if(e.target.classList.contains("moveElementUp")){
         
-    }
-    if(e.target.classList.contains("moveElementDown")){
-        console.log("jepper");
-    }
-});
+//     }
+//     if(e.target.classList.contains("moveElementDown")){
+//         console.log("jepper");
+//     }
+// });

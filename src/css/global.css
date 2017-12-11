@@ -777,6 +777,12 @@
   display: flex;
   width: 100%; }
 
+.create-event .moveElementDown, .create-event .moveElementUp {
+  fill: #434A51; }
+  .create-event .moveElementDown:hover, .create-event .moveElementUp:hover {
+    fill: #5a646d;
+    cursor: pointer; }
+
 * {
   box-sizing: border-box;
   margin: 0;
