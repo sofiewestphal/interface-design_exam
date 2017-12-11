@@ -4,6 +4,7 @@
 @import '_components/breadcrumbs.scss';
 @import '_components/_home.scss';
 @import '_components/_carousel.scss';
+@import '_components/_my-profile.scss';
 
 * {
   box-sizing: border-box;
@@ -46,6 +47,9 @@ body {
   .col-33 {
     flex-basis: calc(33.33% - 20px);
   }
+  .col-50 {
+    flex-basis: calc(50% - 20px);
+  }
   .col-66 {
     flex-basis: calc(66.67% - 20px);
   }
@@ -64,6 +68,10 @@ h1 {
 h2 {
   @extend h1;
   font-size: 1.6rem;
+
+  small {
+    font-weight: 300;
+  }
 }
 h3 {
   @extend h1;

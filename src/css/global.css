@@ -334,6 +334,41 @@
         transform: translateX(-100%); }
       .image-carousel .carousel-images img.upcoming-image {
         transform: translateX(100%); }
+@media screen and (max-width: 480px) {
+  .my-profile .col-50.mobileFullWidth {
+    flex-basis: calc(100% - 20px); } }
+
+.my-profile svg {
+  height: 24px;
+  width: 24px;
+  transform: scale(0.8); }
+
+.my-profile .boxProfileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.my-profile .boxEvent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media screen and (max-width: 480px) {
+    .my-profile .boxEvent {
+      flex-direction: column;
+      align-items: flex-start; }
+      .my-profile .boxEvent .linkSeeMore {
+        margin-top: 8px; }
+      .my-profile .boxEvent > :last-child {
+        align-self: flex-end; } }
+  .my-profile .boxEvent .linkSeeMore {
+    min-width: 125px; }
+  .my-profile .boxEvent .iconText {
+    display: flex; }
+
+.my-profile .boxBottomLink {
+  display: flex;
+  justify-content: center; }
 
 * {
   box-sizing: border-box;
@@ -365,6 +400,8 @@ body {
       flex-grow: 1; }
   .grid-container .col-33 {
     flex-basis: calc(33.33% - 20px); }
+  .grid-container .col-50 {
+    flex-basis: calc(50% - 20px); }
   .grid-container .col-66 {
     flex-basis: calc(66.67% - 20px); }
   .grid-container .col-100 {
@@ -378,6 +415,8 @@ h1, h2, h3 {
 
 h2 {
   font-size: 1.6rem; }
+  h2 small {
+    font-weight: 300; }
 
 h3 {
   font-size: 1.33rem; }
