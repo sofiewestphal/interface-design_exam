@@ -231,6 +231,13 @@ button {
     background-color: $orange;
     border-color: $orange;
   }
+  svg{
+     width:24px;
+     height:24px;
+     fill:$white;
+     position: absolute;
+     transform:translateX(5px);
+  }
 }
 
 // Box

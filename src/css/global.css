@@ -564,7 +564,8 @@
     .event-statistics .statistics-header button svg {
       fill: #0B6AD6;
       width: 1rem;
-      height: 1rem; }
+      height: 1rem;
+      transform: translateX(-15px); }
     .event-statistics .statistics-header button .dropdown {
       display: none;
       position: absolute;
@@ -967,6 +968,12 @@ button {
     color: #FFFFFF;
     background-color: #E55C37;
     border-color: #E55C37; }
+  button svg {
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
+    position: absolute;
+    transform: translateX(5px); }
 
 .box {
   border-radius: 3px;
