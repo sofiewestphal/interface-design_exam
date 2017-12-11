@@ -309,15 +309,17 @@
     height: 60px; }
   .image-carousel .carousel-images {
     position: relative;
-    height: 32vh;
+    height: 425px;
     overflow: hidden;
-    user-select: none; }
+    user-select: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 3px; }
     .image-carousel .carousel-images .carousel-btns {
       position: absolute;
       width: 100%;
       top: 0;
       z-index: 1;
-      height: 32vh;
+      height: 100%;
       display: flex;
       align-items: center; }
       .image-carousel .carousel-images .carousel-btns a {
@@ -330,16 +332,20 @@
         left: 0; }
       .image-carousel .carousel-images .carousel-btns .nextBtn {
         right: 0; }
-    .image-carousel .carousel-images img {
+    .image-carousel .carousel-images .carousel-image, .image-carousel .carousel-images img {
       position: absolute;
       top: 0;
       width: 100%;
-      transition: transform .240s ease-out; }
-      .image-carousel .carousel-images img.active-image {
+      height: 100%;
+      transition: transform .240s ease-out;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .image-carousel .carousel-images .carousel-image.active-image, .image-carousel .carousel-images img.active-image {
         transform: translateX(0px); }
-      .image-carousel .carousel-images img.previous-image {
+      .image-carousel .carousel-images .carousel-image.previous-image, .image-carousel .carousel-images img.previous-image {
         transform: translateX(-100%); }
-      .image-carousel .carousel-images img.upcoming-image {
+      .image-carousel .carousel-images .carousel-image.upcoming-image, .image-carousel .carousel-images img.upcoming-image {
         transform: translateX(100%); }
 
 @media screen and (max-width: 480px) {
@@ -655,6 +661,13 @@
 .about-event {
   display: flex;
   flex-direction: column; }
+  .about-event .facebook-friends {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .about-event .facebook-friends > * {
+      margin: 0 .25rem; }
   .about-event p {
     font-size: .95rem;
     display: flex;
@@ -812,22 +825,26 @@ body {
   color: #101316;
   padding-top: 50px; }
 
-.container, .grid-container {
+.container, .grid-container, .column-container {
   width: 96%;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 10px; }
-  .container.small, .small.grid-container {
+  .container.small, .small.grid-container, .small.column-container {
     max-width: 860px; }
 
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0; }
+  padding: 0;
+  align-items: flex-start; }
+  .grid-container.dir-column {
+    flex-direction: column; }
   .grid-container .col {
     margin: 0 10px 20px 10px;
     flex-grow: 0;
-    flex-shrink: 0; }
+    flex-shrink: 0;
+    align-self: flex-start; }
     .grid-container .col.grow {
       flex-grow: 1; }
   .grid-container .col-33 {
@@ -838,6 +855,13 @@ body {
     flex-basis: calc(66.67% - 20px); }
   .grid-container .col-100 {
     flex-basis: calc(100% - 20px); }
+
+.column-container {
+  columns: 2; }
+  .column-container .column-66 {
+    width: 66%; }
+  .column-container .column-33 {
+    width: 33%; }
 
 h1, h2, h3 {
   font-size: 2.4rem;

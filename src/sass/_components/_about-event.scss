@@ -1,6 +1,15 @@
 .about-event{
    display:flex;
    flex-direction:column;
+   .facebook-friends{
+      display:flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      > *{
+         margin: 0 .25rem;
+      }
+   }
    p{
       font-size:.95rem;
       display:flex;
