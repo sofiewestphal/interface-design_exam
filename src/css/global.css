@@ -378,6 +378,16 @@
   display: flex;
   justify-content: center; }
 
+.my-profile .subscription h3 p {
+  display: inline-block;
+  vertical-align: baseline; }
+
+@media screen and (max-width: 768px) {
+  .my-profile .subscription .action-bar {
+    display: block; }
+    .my-profile .subscription .action-bar a:first-child {
+      margin-bottom: 0.75rem; } }
+
 .event-filters {
   user-select: none;
   overflow: hidden;

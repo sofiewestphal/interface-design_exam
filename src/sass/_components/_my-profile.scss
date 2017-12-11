@@ -51,4 +51,20 @@
         display: flex;
         justify-content: center;
     }
+
+    .subscription {
+        h3 p {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            .action-bar {
+                display: block;
+                a:first-child {
+                    margin-bottom: 0.75rem;
+                }
+            }
+        }
+    }
 }
