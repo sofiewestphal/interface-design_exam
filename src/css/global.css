@@ -217,6 +217,9 @@
 .u_text-center {
   text-align: center; }
 
+.u_text-right {
+  text-align: right; }
+
 .u_block-center {
   display: block;
   margin: 0 auto; }
@@ -677,7 +680,6 @@
       padding: .5rem;
       border-radius: 2px;
       border: 1px solid #CED6DE;
-      font-family: "Open Sans", sans-serif;
       resize: vertical; }
     .comment-section .new-comment .write-comment button {
       margin: 0 1rem;
@@ -715,7 +717,10 @@
     flex-wrap: wrap; }
 
 .create-event #boxBasicInformation input, .create-event #boxBasicInformation textarea, .create-event #boxBasicInformation select {
-  border-style: none; }
+  border: 1px solid #CED6DE;
+  border-radius: 2px;
+  outline: 0px;
+  padding: 0.5rem; }
 
 .create-event label {
   cursor: text; }
@@ -869,6 +874,10 @@ a {
   a svg {
     display: inline-block;
     fill: #0B6AD6; }
+
+textarea, input, select {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem; }
 
 button {
   cursor: pointer;

@@ -2,7 +2,11 @@
     #boxBasicInformation {
         input, textarea, select{
             // background-color: rgba(255,255,255,0.7);
-            border-style: none;
+            //border-style: none;
+            border: 1px solid $light-grey;
+            border-radius: $border-radius;
+            outline: 0px;
+            padding: 0.5rem;
         }
     }
     label {
@@ -21,7 +25,7 @@
     button {
         align-self: flex-end;
     }
-
+ 
     .inputCheckbox{
         width: auto;
     }

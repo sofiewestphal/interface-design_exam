@@ -152,6 +152,11 @@ a {
   
 }
 
+textarea, input, select{
+   font-family: $openSans;
+   font-size: 1rem;
+}
+
 // Buttons
 button {
   cursor: pointer;
