@@ -27,17 +27,18 @@
          display:flex;
          justify-content:center;
          align-items:center;
+         margin-top: 4px;
          svg{
             fill:$white; 
-            width:24px;
+            width:24px; 
             height:24px; 
          }
       }
       .facility-info{
-         margin-left: .75rem; 
-         h4{
-            line-height: .95rem; 
-         }
+         margin-left: .75rem;
+         /*h4{
+            line-height: .95rem;
+         }*/
       }
    }     
 }

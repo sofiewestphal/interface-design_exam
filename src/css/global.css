@@ -605,7 +605,7 @@
   margin: 2rem 0; }
   .speaker .speaker-info, .speaker .schedule-info, .schedule-block .speaker-info, .schedule-block .schedule-info {
     flex-grow: 1; }
-    .speaker .speaker-info h4, .speaker .speaker-info p, .speaker .schedule-info h4, .speaker .schedule-info p, .schedule-block .speaker-info h4, .schedule-block .speaker-info p, .schedule-block .schedule-info h4, .schedule-block .schedule-info p {
+    .speaker .speaker-info.speaker-info h4, .speaker .speaker-info.speaker-info p, .speaker .schedule-info.speaker-info h4, .speaker .schedule-info.speaker-info p, .schedule-block .speaker-info.speaker-info h4, .schedule-block .speaker-info.speaker-info p, .schedule-block .schedule-info.speaker-info h4, .schedule-block .schedule-info.speaker-info p {
       line-height: .95rem; }
     .speaker .speaker-info button, .speaker .schedule-info button, .schedule-block .speaker-info button, .schedule-block .schedule-info button {
       font-weight: bold; }
@@ -637,15 +637,17 @@
       flex-shrink: 0;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin-top: 4px; }
       .facilities .facility .facility-icon svg {
         fill: #FFFFFF;
         width: 24px;
         height: 24px; }
     .facilities .facility .facility-info {
-      margin-left: .75rem; }
-      .facilities .facility .facility-info h4, .facilities .facility .facility-info p {
-        line-height: .95rem; }
+      margin-left: .75rem;
+      /*h4{
+            line-height: .95rem;
+         }*/ }
 
 .about-event {
   display: flex;
@@ -660,9 +662,6 @@
       height: 18px;
       margin-right: .5rem;
       fill: #434A51; }
-
-.description-box p {
-  font-size: .85rem; }
 
 .comment-section .new-comment {
   display: flex; }
@@ -694,7 +693,8 @@
   flex-direction: column; }
   .comment-section .comment .comment-content {
     display: flex;
-    margin-bottom: .5rem; }
+    margin-bottom: .5rem;
+    max-width: 850px; }
   .comment-section .comment .profile-picture {
     margin-right: 1rem;
     flex-shrink: 0; }

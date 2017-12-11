@@ -3,7 +3,7 @@
    margin:2rem 0;
    .speaker-info, .schedule-info{
       flex-grow: 1;
-      h4{
+      &.speaker-info h4{
          line-height: .95rem;
       }
       button{
