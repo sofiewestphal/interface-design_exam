@@ -214,6 +214,7 @@
 .u_bold {
   font-weight: 700; }
 
+<<<<<<< HEAD
 .u_text-center {
   text-align: center; }
 
@@ -369,6 +370,124 @@
 .my-profile .boxBottomLink {
   display: flex;
   justify-content: center; }
+=======
+.event-filters {
+  user-select: none;
+  overflow: hidden;
+  min-width: 300px; }
+  .event-filters .filter-container.expanded .filter-content {
+    padding: .5rem 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px #CED6DE solid;
+    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+  .event-filters .filter-container.expanded .filter-title svg {
+    transform: rotate(0deg);
+    transition: transform 120ms ease; }
+  .event-filters .filter-title {
+    display: flex;
+    justify-content: space-between; }
+    .event-filters .filter-title:hover {
+      cursor: pointer;
+      color: #0B6AD6;
+      fill: #0B6AD6; }
+    .event-filters .filter-title svg {
+      transform: rotate(90deg); }
+  .event-filters .filter-content {
+    margin: .5rem -1rem;
+    padding: 0rem 1rem;
+    max-height: 1px;
+    border-top: 1px #CED6DE solid;
+    border-bottom: 0px #CED6DE solid;
+    background-color: #F7FAFC;
+    overflow: hidden;
+    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+    .event-filters .filter-content .distance-container, .event-filters .filter-content .when-row, .event-filters .filter-content .skill-level-row, .event-filters .filter-content .checkbox-wrapper {
+      display: flex;
+      align-items: center; }
+    .event-filters .filter-content .distance-container input {
+      flex: 0 1 80px;
+      margin: .45rem; }
+    .event-filters .filter-content .when-row label {
+      flex: 0 0 50px; }
+    .event-filters .filter-content .skill-level-row label {
+      flex: 0 0 80px; }
+    .event-filters .filter-content .checkbox-wrapper input {
+      flex: 0 0 25px; }
+    .event-filters .filter-content .checkbox-wrapper label {
+      margin-top: .1rem;
+      flex: 1 1 100%;
+      padding: .0rem 0; }
+    .event-filters .filter-content .checkbox-wrapper input:checked + label {
+      color: #0B6AD6; }
+    .event-filters .filter-content .search-wrapper {
+      position: relative; }
+      .event-filters .filter-content .search-wrapper input {
+        padding: 0.3rem; }
+      .event-filters .filter-content .search-wrapper svg {
+        position: absolute;
+        padding-right: .3rem;
+        padding-left: .2rem;
+        right: .1rem;
+        top: .5rem;
+        transform: scale(0.7);
+        background-color: #FFFFFF; }
+    .event-filters .filter-content .btnSeeMore {
+      font-size: .85rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 0;
+      border: 0px;
+      color: #0B6AD6;
+      fill: #0B6AD6; }
+      .event-filters .filter-content .btnSeeMore svg {
+        margin-left: -2px;
+        margin-right: 2px;
+        fill: #0B6AD6;
+        transform: scale(0.7); }
+  .event-filters a.big {
+    float: right; }
+    .event-filters a.big svg {
+      width: 1.6rem;
+      height: 1.6rem; }
+  .event-filters svg {
+    width: 24px;
+    height: 24px;
+    transform-origin: center;
+    transition: transform 120ms ease; }
+  .event-filters input, .event-filters label, .event-filters select {
+    font-size: .85rem;
+    margin: .25rem 0;
+    color: #65707A;
+    font-family: "Open Sans", sans-serif; }
+  .event-filters input {
+    padding: .5rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px #CED6DE solid;
+    border-radius: 2px; }
+  .event-filters label {
+    display: inline-block; }
+  .event-filters select {
+    display: block;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px #CED6DE solid;
+    border-radius: 2px;
+    padding: .5rem;
+    -webkit-appearance: none; }
+  .event-filters .select-wrapper {
+    display: block;
+    width: 100%;
+    position: relative; }
+    .event-filters .select-wrapper svg {
+      position: absolute;
+      right: .5rem;
+      top: .6rem; }
+>>>>>>> Feature-event-filters
 
 * {
   box-sizing: border-box;

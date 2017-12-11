@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Gulp Optimization</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Open+Sans" rel="stylesheet">
+	<!-- build:css css/bundle.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<!-- endbuild -->
+</head>
+
+<body>
+
+
+
+	<div class="grid-container">
+		<div class="box col col-33 event-filters">
+			<h3 class="u_mb-md">Filters</h3>
+      
+      <!-- Where -->
+      <div class="filter-container u_mb-md" data-collapse-id="1" >
+        <!-- Title and collapse/expand -->
+        <div class="btnToggleCollapse filter-title" data-collapse-toggle-id="1">
+          <h4>Where</h4>
+          <svg>
+            <use xlink:href="#md-keyboard-arrow-down"></use>
+          </svg>
+        </div>
+
+        <!-- Filter content -->
+        <div class="filter-content">
+          <label for="txtAddress">Address</label>
+          <input class="u_block"  type="text" name="txtAdress">
+
+          <div class="distance-container">
+            <label>max</label>
+            <input type="number">
+            <label>km to event-filters</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- When -->
+      <div class="filter-container u_mb-md" data-collapse-id="2" >
+        <!-- Title and collapse/expand -->
+        <div class="btnToggleCollapse filter-title" data-collapse-toggle-id="2">
+          <h4>Where</h4>
+          <svg>
+            <use xlink:href="#md-keyboard-arrow-down"></use>
+          </svg>
+        </div>
+        
+        <!-- Filter content -->
+        <div class="filter-content">
+          <div class="when-row">
+            <label>From</label>
+            <input type="date" name="" id="">
+          </div>
+          <div class="when-row">
+            <label>To</label>
+            <input type="date" name="" id="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill level -->            
+      <div class="filter-container u_mb-md" data-collapse-id="3" >
+        <!-- Title and collapse/expand -->
+        <div class="btnToggleCollapse filter-title" data-collapse-toggle-id="3">
+          <h4>Skill level</h4>
+          <svg>
+            <use xlink:href="#md-keyboard-arrow-down"></use>
+          </svg>
+        </div>
+
+        <!-- Filter content -->
+        <div class="filter-content">
+          <div class="skill-level-row">
+            <label>Minimum</label>
+            <div class="select-wrapper">
+              <select>
+                <option value="" disabled selected>Choose skill level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="expert">Expert</option>
+              </select>
+              <svg><use xlink:href="#md-arrow-drop-down"></use></svg>
+            </div>
+          </div>
+          <div class="skill-level-row">
+            <label>Maximum</label>
+            <div class="select-wrapper">
+              <select placeholder="">
+                <option value="" disabled selected>Choose skill level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="expert">Expert</option>
+              </select>
+              <svg><use xlink:href="#md-arrow-drop-down"></use></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facilities -->            
+      <div class="filter-container u_mb-md" data-collapse-id="4" >
+        <!-- Title and collapse/expand -->
+        <div class="btnToggleCollapse filter-title" data-collapse-toggle-id="4">
+          <h4>Facilities</h4>
+          <svg><use xlink:href="#md-keyboard-arrow-down"></use> </svg>
+        </div>
+
+        <!-- Filter content -->
+        <div class="filter-content">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check1"><label for="check1">Free drinks</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check2"><label for="check2">Wardrobe</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check3"><label for="check3">Free t-shirts</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check4"><label for="check4">Stickerss</label>
+          </div>
+
+          <button class="btnSeeMore u_mt-xs">
+            <svg><use xlink:href="#md-arrow-downward"></use></svg>
+            See 11 more
+          </button>
+        </div>
+      </div>
+
+      <!-- Organizer -->            
+      <div class="filter-container u_mb-md" data-collapse-id="5" >
+        <!-- Title and collapse/expand -->
+        <div class="btnToggleCollapse filter-title" data-collapse-toggle-id="5">
+          <h4>Organizer</h4>
+          <svg>
+            <use xlink:href="#md-keyboard-arrow-down"></use>
+          </svg>
+        </div>
+
+        <!-- Filter content -->
+        <div class="filter-content">
+          <div class="search-wrapper u_mb-xs">
+            <input type="text" placeholder="Filter list...">
+            <svg><use xlink:href="#md-search"></use></svg>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check5"><label for="check5">PHP user group cph</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check6"><label for="check6">NodeJS Denmark</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check7"><label for="check7">JS Master class KBH</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check8"><label for="check8">CopenhagenJS</label>
+          </div>
+
+          <button class="btnSeeMore u_mt-xs">
+            <svg><use xlink:href="#md-arrow-downward"></use></svg>
+            See 42 more
+          </button>
+        </div>
+      </div>
+
+      <!-- Details -->            
+      <div class="filter-container u_mb-md" data-collapse-id="6" >
+        <!-- Title and collapse/expand -->
+        <div class="btnToggleCollapse filter-title" data-collapse-toggle-id="6">
+          <h4>Details</h4>
+          <svg>
+            <use xlink:href="#md-keyboard-arrow-down"></use>
+          </svg>
+        </div>
+
+        <!-- Filter content -->
+        <div class="filter-content">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check8"><label for="check8">Looking for sponsors</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check9"><label for="check9">Looking for speakers</label>
+          </div>
+        </div>
+      </div>
+
+
+
+      <a href="" class="big">
+        <div>See results </div> 
+        <svg><use xlink:href="#md-arrow-forward"></use></svg>
+      </a>
+     
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- build:js js/bundle.js -->
+	<script src="js/event-filters.js"></script>
+	<script src="js/lib/a.js"></script>
+	<script src="js/lib/b.js"></script>
+	<script src="js/main.js"></script>
+	<!-- endbuild -->
+
+
+	<svg class="u_hidden" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<g id="md-keyboard-arrow-down">
+        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+      </g>
+      <g id="md-arrow-drop-down">
+        <path d="M7 10l5 5 5-5z"/>
+      </g>
+      <g id="md-arrow-downward">
+        <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/>
+      </g>
+			<g id="md-arrow-forward">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+        </g>
+      <g id="md-search">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </g>
+		</defs>
+	</svg>
+
+</body>
+
+</html>
