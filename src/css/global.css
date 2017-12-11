@@ -230,6 +230,9 @@
 .u_v-align-top {
   vertical-align: top; }
 
+.u_justify-content-center {
+  justify-content: center; }
+
 .trophy .trophy-icon {
   width: 100%;
   max-width: 125px; }
