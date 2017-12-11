@@ -5,7 +5,8 @@
 // });
 
 btnAddImage.addEventListener("click", function(){
-    var boxSpeaker = '<div class="boxSpeaker box col col-50">\
+    var boxImage = '<div class="boxImage mobileFullWidth box col col-50">\
+                        <div class="boxBannerImage"></div>\
                         <div class="delete-bar u_mt-sm">\
                             <div>\
                                 <svg class="moveElementUp"><use viewBox="0 0 24 24" href="#md-keyboard-arrow-up"></use></svg>\
@@ -14,7 +15,7 @@ btnAddImage.addEventListener("click", function(){
                             <button class="orange outline">Delete</button>\
                         </div>\
                     </div>'
-boxFacilities.insertAdjacentHTML('beforeend', boxImages);
+                    boxImages.insertAdjacentHTML('afterend', boxImage);
 });
 
 
@@ -32,7 +33,7 @@ btnAddFacility.addEventListener("click", function(){
                             <button class="orange outline">Delete</button>\
                         </div>\
                     </div>'
-    boxFacilities.insertAdjacentHTML('beforeend', boxFacility);
+    boxFacilities.insertAdjacentHTML('afterend', boxFacility);
     selectFacility.value = "";
     txtfacilityDescription.value = "";
 });
