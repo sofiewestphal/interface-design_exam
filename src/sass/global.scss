@@ -1,19 +1,23 @@
 @import '_utils/_vars.scss';
 @import '_utils/_utilities.scss';
-@import '_components/_trophies.scss';
-@import '_components/_breadcrumbs.scss';
-@import '_components/_home.scss';
-@import '_components/_carousel.scss';
-@import '_components/_my-profile.scss';
-@import '_components/_event-filters.scss';
-@import '_components/_modal.scss';
-@import '_components/_event-statistics.scss';
-@import '_components/_speakers.scss';
-@import '_components/_facilities.scss';
+
+// Components
 @import '_components/_about-event.scss';
+@import '_components/_breadcrumbs.scss';
+@import '_components/_carousel.scss';
 @import '_components/_comments.scss';
 @import '_components/_create-event.scss';
 @import '_components/_event-card.scss';
+@import '_components/_event-filters.scss';
+@import '_components/_event-statistics.scss';
+@import '_components/_facilities.scss';
+@import '_components/_home.scss';
+@import '_components/_modal.scss';
+@import '_components/_my-profile.scss';
+@import '_components/_nav-bar.scss';
+@import '_components/_speakers.scss';
+@import '_components/_trophies.scss';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -272,86 +276,5 @@ a.button {
   &.xl {
     width: 185px;
     height: 185px;
-  }
-}
-
-// nav bar
-div.nav-bar {
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 0 0 20px;
-  width: 100%;
-  background-color: $white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
-  z-index: 4;
-  a.logo {
-    color: $black;
-    font-family: $montserrat;
-    font-size: 1.15rem;
-    padding: 0 .75rem 0 0;
-  }
-  a {
-    display: flex;
-    align-items: center;
-    color: $black;
-    font-size: .9rem;
-    line-height: 50px;
-    padding: 0 .75rem;
-    margin: 0 0rem;
-    text-decoration: none;
-    &:hover {
-      color: $blue;
-    }
-    &.active {
-      font-weight: 700;
-      color: $blue;
-      line-height: 48px;
-      border-bottom: 2px $blue solid;
-    }
-  }
-  nav {
-    ul {
-      display: flex;
-      list-style: none;
-    }
-    .menu-user {
-      margin-left: 1rem;
-      padding-left: .25rem;
-      &>a {
-        border-left: 1px $light-grey solid;
-        padding-left: 1.50rem;
-        cursor: pointer;
-      }
-      .profile-picture {
-        margin-right: .5rem;
-      }
-      svg {
-        margin-left: .25rem;
-        width: 24px;
-        height: 24px;
-        fill: $black;
-      }
-      &:hover {
-        .dropdown {
-          display: block;
-        }
-      }
-      .dropdown {
-        display: none;
-        border-radius: 0 0 3px 3px;
-        padding: 5px 0 10px 0;
-        margin-left: 1px;
-        border-top: 1px $light-grey solid;
-        background-color: $off-white-lighter;
-        svg {
-          transform: scale(0.75);
-          margin-right: 6px;
-        }
-      }
-    }
   }
 }
