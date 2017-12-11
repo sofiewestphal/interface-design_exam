@@ -1,7 +1,7 @@
 .event-filters {
   user-select: none;
   overflow: hidden;
-  min-width: 300px; // Dummy rule - remove
+  align-self: flex-start;
   
   .filter-container.expanded {
     .filter-content {
@@ -193,5 +193,35 @@
       right: .5rem;
       top: .6rem;
     }
+  }
+}
+
+.events-search-bar {
+  width: 250px;
+  float: right;
+  position: relative;
+
+  input {
+    font-size: .85rem;
+    margin: .25rem 0;
+    color: $medium-grey;
+    font-family: $openSans;
+    padding: .5rem;
+    width: 100%;
+    background-color: $white;
+    border: 1px $light-grey solid;
+    border-radius: $border-radius;
+  }
+
+  svg {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    padding: 0.45rem;
+    background-color: $white;
+    top: 6px;
+    right: 1px;
+    // border: 1px red solid;
+
   }
 }
