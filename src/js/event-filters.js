@@ -19,5 +19,6 @@ var filterCollapseExpand = {
     this.el.btnsToggleCollapse = document.getElementsByClassName("btnToggleCollapse")
     this.addEventListeners()
   }
-}
-window.addEventListener("load", filterCollapseExpand.init.bind(filterCollapseExpand))
+};
+window.addEventListener("DOMContentLoaded", filterCollapseExpand.init.bind(filterCollapseExpand));
+// window.addEventListener("load", filterCollapseExpand.init.bind(filterCollapseExpand));

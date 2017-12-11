@@ -3,6 +3,8 @@
 //     console.log("hh");
 //     inputEventPrice.val() = "";
 // });
+try {
+
 
 btnAddImage.addEventListener("click", function(){
     var boxImage = '<div class="boxImage mobileFullWidth box col col-50">\
@@ -93,6 +95,10 @@ btnAddScheduleBlock.addEventListener("click", function(){
     txtScheduleTitle.value = "";
     txtScheduleDescription.value = "";
 });
+
+} catch (err) {
+    console.log("Error in create-event.js")
+}
 
 // document.addEventListener("click", function(e){
 //     if(e.target.classList.contains("moveElementUp")){

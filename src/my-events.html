@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gulp Optimization</title>
+  <title>Devent</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Open+Sans" rel="stylesheet">
   <!-- build:css css/bundle.css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,42 +12,41 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- Navbar logged in -->
   <div class="nav-bar">
-    <a class="logo">
+    <a href="index_logged-in.html" class="logo">
       <span class="u_bold">dev</span>ent
     </a>
     <nav>
       <ul>
         <li>
-          <a href="">Create event</a>
+          <a href="create-event.html">Create event</a>
         </li>
         <li>
-          <a href="find-events.html">Find event</a>
+          <a href="find-events_logged-in.html">Find event</a>
         </li>
         <li>
-          <a class="active" href="my-events.html">My events</a>
+          <a class="active" href="my-events.html">My Events</a>
         </li>
         <li>
-          <a href="">Trophies</a>
+          <a href="trophies.html">Trophies</a>
         </li>
         <li class="menu-user">
-          <a href="">
-            <div class="profile-picture xs u_ml-sm" style="background-image: url('images/henningjensen.jpg');"></div>
-            Henning Jensen
+          <a>
+            <div class="profile-picture xs" style="background-image: url('images/user_01.jpg');"></div>
+            Martin Christensen
             <svg>
               <use href="#md-arrow-drop-down"></use>
             </svg>
           </a>
-
           <div class="box dropdown">
-            <a href="">
+            <a href="my-profile.html">
               <svg>
                 <use xlink:href="#md-person"></use>
               </svg>
               My profile
             </a>
-            <a href="">
+            <a href="index.html">
               <svg>
                 <use xlink:href="#md-sign-out"></use>
               </svg>
@@ -57,9 +56,7 @@
         </li>
       </ul>
     </nav>
-
   </div>
-  <!-- /End of navbar -->
 
 
   <div class="u_mt-xl container small">

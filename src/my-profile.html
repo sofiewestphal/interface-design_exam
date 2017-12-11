@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gulp Optimization</title>
+  <title>Devent</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Open+Sans" rel="stylesheet">
   <!-- build:css css/bundle.css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,8 +12,9 @@
 </head>
 
 <body>
+  <!-- Navbar logged in -->
   <div class="nav-bar">
-    <a class="logo">
+    <a href="index_logged-in.html" class="logo">
       <span class="u_bold">dev</span>ent
     </a>
     <nav>
@@ -22,32 +23,30 @@
           <a href="create-event.html">Create event</a>
         </li>
         <li>
-          <a href="find-event.html">Find event</a>
+          <a href="find-events_logged-in.html">Find event</a>
         </li>
         <li>
-          <a href="my-events.html">My events</a>
+          <a href="my-events.html">My Events</a>
         </li>
         <li>
           <a href="trophies.html">Trophies</a>
         </li>
         <li class="menu-user">
-          <a href="">
-            <div class="profile-picture xs" style="background-image: url('images/henningjensen.jpg');"></div>
-            Henning Jensen
+          <a>
+            <div class="profile-picture xs" style="background-image: url('images/user_01.jpg');"></div>
+            Martin Christensen
             <svg>
               <use href="#md-arrow-drop-down"></use>
             </svg>
           </a>
-
-
           <div class="box dropdown">
-            <a href="">
+            <a href="my-profile.html">
               <svg>
                 <use xlink:href="#md-person"></use>
               </svg>
               My profile
             </a>
-            <a href="">
+            <a href="index.html">
               <svg>
                 <use xlink:href="#md-sign-out"></use>
               </svg>
@@ -57,13 +56,12 @@
         </li>
       </ul>
     </nav>
-
   </div>
 
   <div class="my-profile u_mt-xl">
     <div class="grid-container small ">
       <div class="col col-100 boxProfileInfo">
-        <div class="profile-picture xl" style="background-image: url('images/henningjensen.jpg')"></div>
+        <div class="profile-picture xl" style="background-image: url('images/user_01.jpg')"></div>
         <h1 class="u_mt-md">Henning Jensen</h1>
         <p class="meta u_my-md">
           Member since 22. October 2016, Attended 25 events
@@ -100,7 +98,7 @@
             </div>
           </div>
           <div>
-            <a href="" class="big linkSeeMore u_ml-sm">
+            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
               <div>
                 See more
               </div>
@@ -127,7 +125,7 @@
             </div>
           </div>
           <div>
-            <a href="" class="big linkSeeMore u_ml-sm">
+            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
               <div>
                 See more
               </div>
@@ -170,7 +168,7 @@
             </div>
           </div>
           <div>
-            <a href="" class="big linkSeeMore u_ml-sm">
+            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
               <div>
                 See more
               </div>
@@ -198,7 +196,7 @@
             </div>
           </div>
           <div>
-            <a href="" class="big linkSeeMore u_ml-sm">
+            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
               <div>
                 See more
               </div>
@@ -224,7 +222,9 @@
 
       <div class="grid-container small">
         <div class="box subscription col col-50 mobileFullWidth">
-          <h3>JS Meetup <p class="meta">215 subscribers</p></h3>
+          <h3>JS Meetup
+            <p class="meta">215 subscribers</p>
+          </h3>
           <p class="meta">2 upcoming events</p>
           <p class="meta u_mb-xs">23 previous events</p>
           <div class="action-bar">
@@ -233,7 +233,9 @@
           </div>
         </div>
         <div class="box subscription col col-50 mobileFullWidth">
-          <h3>JS Meetup <p class="meta">215 subscribers</p></h3>
+          <h3>JS Meetup
+            <p class="meta">215 subscribers</p>
+          </h3>
           <p class="meta">2 upcoming events</p>
           <p class="meta u_mb-xs">23 previous events</p>
           <div class="action-bar">
@@ -242,7 +244,9 @@
           </div>
         </div>
         <div class="box subscription col col-50 mobileFullWidth">
-          <h3>JS Meetup <p class="meta">215 subscribers</p></h3>
+          <h3>JS Meetup
+            <p class="meta">215 subscribers</p>
+          </h3>
           <p class="meta">2 upcoming events</p>
           <p class="meta u_mb-xs">23 previous events</p>
           <div class="action-bar">

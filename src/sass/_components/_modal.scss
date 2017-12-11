@@ -20,6 +20,10 @@
       transition: transform 180ms ease;
     }
   }
+
+  &.inactive {
+    display: none;
+  }
   
   .modal {
     transition: transform 180ms ease;
@@ -61,5 +65,9 @@
   svg {
     width: 1.5rem;
     height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
   }
 }

@@ -407,7 +407,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     border-bottom: 1px #CED6DE solid;
-    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
   .event-filters .filter-container.expanded .filter-title svg {
     transform: rotate(0deg);
     transition: transform 120ms ease; }
@@ -428,7 +428,7 @@
     border-bottom: 0px #CED6DE solid;
     background-color: #F7FAFC;
     overflow: hidden;
-    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
     .event-filters .filter-content .distance-container, .event-filters .filter-content .when-row, .event-filters .filter-content .skill-level-row, .event-filters .filter-content .checkbox-wrapper {
       display: flex;
       align-items: center; }
@@ -555,6 +555,8 @@
     .overlay.active .modal {
       transform: translateY(0px);
       transition: transform 180ms ease; }
+  .overlay.inactive {
+    display: none; }
   .overlay .modal {
     transition: transform 180ms ease;
     transform: translateY(-20px);
@@ -585,6 +587,8 @@
   .overlay svg {
     width: 1.5rem;
     height: 1.5rem; }
+  .overlay a {
+    text-decoration: none; }
 
 .event-statistics .statistics-header {
   display: flex;
@@ -842,28 +846,12 @@
   display: flex;
   width: 100%; }
 
-<<<<<<< HEAD
 .create-event .moveElementDown, .create-event .moveElementUp {
   fill: #434A51; }
   .create-event .moveElementDown:hover, .create-event .moveElementUp:hover {
     fill: #5a646d;
     cursor: pointer; }
 
-.event-card .event-info-container {
-  display: flex; }
-  .event-card .event-info-container .event-image {
-    flex: 0 0 35%;
-    margin: -1rem 1.4rem -1rem -1rem;
-    background-size: cover;
-    background-position: center; }
-  .event-card .event-info-container .event-info {
-    flex: 0 1 65%; }
-
-.event-card .icons-container {
-  display: flex;
-  flex-wrap: wrap; }
-  .event-card .icons-container .icon-box {
-=======
 .event-card {
   align-self: flex-start;
   margin-bottom: 1rem; }
@@ -880,7 +868,6 @@
     .event-card .event-info-container .event-info {
       flex: 0 1 60%; }
   .event-card .icons-container {
->>>>>>> Feature-page-search-events
     display: flex;
     flex-wrap: wrap; }
     @media (max-width: 1170px) {
@@ -908,6 +895,7 @@
 body {
   font-family: sans-serif;
   color: #101316;
+  background-color: #F5F8FA;
   padding-top: 50px; }
 
 .container, .grid-container, .column-container {
@@ -1009,50 +997,65 @@ a {
     display: inline-block;
     fill: #0B6AD6; }
 
-textarea, input, select {
+textarea,
+input,
+select {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem; }
 
-button {
+button,
+a.button {
   cursor: pointer;
   padding: 0.5rem 1rem 0.6rem 1rem;
   font-size: 0.85rem;
   background: none;
   border: 1px solid #CED6DE;
-  border-radius: 2px; }
-  button:hover {
+  border-radius: 2px;
+  text-decoration: none; }
+  button:hover,
+  a.button:hover {
     opacity: 0.8; }
-  button.large {
+  button.large,
+  a.button.large {
     padding: 0.65rem 1.5rem 0.75rem 1.5rem;
     font-size: 1.15rem; }
-  button.small {
+  button.small,
+  a.button.small {
     padding: 0.25rem .65rem 0.25rem .65rem;
     font-size: .75rem; }
-  button.block {
+  button.block,
+  a.button.block {
     display: block;
     width: 100%; }
-  button.grey.outline {
+  button.grey.outline,
+  a.button.grey.outline {
     color: #65707A;
     border-color: #65707A; }
-  button.grey.fill {
+  button.grey.fill,
+  a.button.grey.fill {
     color: #FFFFFF;
     background-color: #65707A;
     border-color: #65707A; }
-  button.blue.outline {
+  button.blue.outline,
+  a.button.blue.outline {
     color: #0B6AD6;
     border-color: #0B6AD6; }
-  button.blue.fill {
+  button.blue.fill,
+  a.button.blue.fill {
     color: #FFFFFF;
     background-color: #0B6AD6;
     border-color: #0B6AD6; }
-  button.orange.outline {
+  button.orange.outline,
+  a.button.orange.outline {
     color: #E55C37;
     border-color: #E55C37; }
-  button.orange.fill {
+  button.orange.fill,
+  a.button.orange.fill {
     color: #FFFFFF;
     background-color: #E55C37;
     border-color: #E55C37; }
-  button svg {
+  button svg,
+  a.button svg {
     width: 24px;
     height: 24px;
     fill: #FFFFFF;
@@ -1102,35 +1105,38 @@ div.nav-bar {
   width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  z-index: 1; }
+  z-index: 4; }
   div.nav-bar a.logo {
     color: #101316;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.15rem; }
-  div.nav-bar nav ul {
-    display: flex;
-    list-style: none; }
-  div.nav-bar nav a {
+    font-size: 1.15rem;
+    padding: 0 .75rem 0 0; }
+  div.nav-bar a {
     display: flex;
     align-items: center;
     color: #101316;
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 50px;
     padding: 0 .75rem;
     margin: 0 0rem;
     text-decoration: none; }
-    div.nav-bar nav a:hover {
+    div.nav-bar a:hover {
       color: #0B6AD6; }
-    div.nav-bar nav a.active {
+    div.nav-bar a.active {
       font-weight: 700;
       color: #0B6AD6;
       line-height: 48px;
       border-bottom: 2px #0B6AD6 solid; }
+  div.nav-bar nav ul {
+    display: flex;
+    list-style: none; }
   div.nav-bar nav .menu-user {
     margin-left: 1rem;
-    padding-left: .75rem; }
+    padding-left: .25rem; }
     div.nav-bar nav .menu-user > a {
-      border-left: 1px #CED6DE solid; }
+      border-left: 1px #CED6DE solid;
+      padding-left: 1.50rem;
+      cursor: pointer; }
     div.nav-bar nav .menu-user .profile-picture {
       margin-right: .5rem; }
     div.nav-bar nav .menu-user svg {

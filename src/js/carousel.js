@@ -1,4 +1,8 @@
-setCarouselHeight();
+try {
+  setCarouselHeight();
+} catch (err) {
+  console.log("Error in carousel.js -> No carousel on this page...")
+}
 
 var aCarouselBtns = document.querySelectorAll('.carousel-btns a');
 
@@ -11,7 +15,7 @@ for (var i = 0; i < aCarouselBtns.length; i++) {
       if(e.currentTarget.classList.contains('nextBtn')){
          goToNextImg();
       }
-   });  
+   });
 }
 
 function goToPrevImg(){

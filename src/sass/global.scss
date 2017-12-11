@@ -14,15 +14,16 @@
 @import '_components/_comments.scss';
 @import '_components/_create-event.scss';
 @import '_components/_event-card.scss';
-
-* { 
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: sans-serif;
   color: $black;
+  background-color: $off-white;
   padding-top: 50px;
 }
 
@@ -32,32 +33,29 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 10px; // Cancels out margin from cols
-
   &.small {
-    max-width: 860px; 
+    max-width: 860px;
   }
 }
+
 .grid-container {
   @extend .container;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   align-items: flex-start;
-  &.dir-column{
-     flex-direction: column;
+  &.dir-column {
+    flex-direction: column;
   }
-
-  .col { 
+  .col {
     margin: 0 10px 20px 10px;
     flex-grow: 0;
     flex-shrink: 0;
-    align-self:flex-start;
-    
+    align-self: flex-start;
     &.grow {
       flex-grow: 1;
     }
   }
-
   .col-33 {
     flex-basis: calc(33.33% - 20px);
   }
@@ -73,16 +71,15 @@ body {
 }
 
 //Column Layout
-.column-container{
-   @extend .container;
-   columns:2;
-
-   .column-66{
-      width:66%;
-   }
-   .column-33{
-      width:33%;
-   }
+.column-container {
+  @extend .container;
+  columns: 2;
+  .column-66 {
+    width: 66%;
+  }
+  .column-33 {
+    width: 33%;
+  }
 }
 
 // Fonts 
@@ -92,37 +89,41 @@ h1 {
   font-weight: 500;
   margin-bottom: .25em;
 }
+
 h2 {
   @extend h1;
   font-size: 1.6rem;
-
   small {
     font-weight: 300;
   }
 }
+
 h3 {
   @extend h1;
   font-size: 1.33rem;
-
   small {
     font-weight: 300;
   }
 }
+
 h4 {
   font-family: $openSans;
   font-weight: 400;
   font-size: 1.1rem;
-  margin-bottom: .25em;  
+  margin-bottom: .25em;
 }
+
 p {
   @extend h4;
   font-size: 1rem;
 }
+
 p.meta {
   @extend h4;
   font-size: .85rem;
   color: $medium-grey;
 }
+
 p.badge {
   @extend h4;
   font-size: .85rem;
@@ -132,32 +133,28 @@ p.badge {
   padding: 0.5rem 1rem;
   display: inline-block;
 }
+
 a {
   font-family: $openSans;
   font-weight: 400;
   color: $blue;
-  
   &.big {
     text-decoration: none;
     display: flex;
     align-items: center;
     font-weight: 700;
     font-family: $montserrat;
-
-
     svg {
       width: 1.6rem;
       height: 1.6rem;
     }
   }
-
   &:hover {
     color: lighten($blue, 15%);
     svg {
       fill: lighten($blue, 15%);
     }
   }
-
   div {
     display: inline-block;
     padding: 0 0.5rem;
@@ -165,78 +162,74 @@ a {
   svg {
     display: inline-block;
     fill: $blue;
-  
-    
   }
-  
 }
 
-textarea, input, select{
-   font-family: $openSans;
-   font-size: 1rem;
+textarea,
+input,
+select {
+  font-family: $openSans;
+  font-size: 1rem;
 }
 
 // Buttons
-button {
+button,
+a.button {
   cursor: pointer;
   padding: 0.5rem 1rem 0.6rem 1rem;
   font-size: 0.85rem;
   background: none;
   border: 1px solid $light-grey;
   border-radius: $border-radius;
-
-  &:hover{
+  text-decoration: none;
+  &:hover {
     opacity: 0.8;
   }
-
   &.large {
     padding: 0.65rem 1.5rem 0.75rem 1.5rem;
     font-size: 1.15rem;
   }
   &.small {
-   padding: 0.25rem .65rem 0.25rem .65rem;
-   font-size: .75rem;
- }
- &.block {
-    display:block;
-    width:100%;
- }
-
+    padding: 0.25rem .65rem 0.25rem .65rem;
+    font-size: .75rem;
+  }
+  &.block {
+    display: block;
+    width: 100%;
+  }
   &.grey.outline {
     color: $medium-grey;
     border-color: $medium-grey;
   }
-  &.grey.fill{
+  &.grey.fill {
     color: $white;
     background-color: $medium-grey;
     border-color: $medium-grey;
   }
-
   &.blue.outline {
     color: $blue;
     border-color: $blue
   }
-  &.blue.fill{
+  &.blue.fill {
     color: $white;
     background-color: $blue;
     border-color: $blue;
   }
-
   &.orange.outline {
     color: $orange;
     border-color: $orange;
   }
-  &.orange.fill{
+  &.orange.fill {
     color: $white;
     background-color: $orange;
     border-color: $orange;
   }
-  svg{
-     width:24px;
-     height:24px;
-     fill:$white;
-     position: absolute;
-     transform:translateX(5px);
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: $white;
+    position: absolute;
+    transform: translateX(5px);
   }
 }
 
@@ -245,15 +238,13 @@ button {
   border-radius: 3px;
   padding: 1rem;
   background-color: $white;
-  box-shadow: 0 3px 6px rgba(0,0,0,.15);
-  
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
   .action-bar {
     margin: 1rem -1rem 0 -1rem;
     padding: 1rem 1rem 0 1rem;
     border-top: 1px $light-grey solid;
     display: flex;
     justify-content: flex-end;
-
   }
 }
 
@@ -262,7 +253,6 @@ button {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-
   &.xs {
     width: 26px;
     height: 26px;
@@ -296,69 +286,60 @@ div.nav-bar {
   padding: 0 0 0 20px;
   width: 100%;
   background-color: $white;
-  box-shadow: 0 3px 6px rgba(0,0,0,.15);
-  z-index: 1;
-
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+  z-index: 4;
   a.logo {
     color: $black;
     font-family: $montserrat;
     font-size: 1.15rem;
-
+    padding: 0 .75rem 0 0;
   }
-
+  a {
+    display: flex;
+    align-items: center;
+    color: $black;
+    font-size: .9rem;
+    line-height: 50px;
+    padding: 0 .75rem;
+    margin: 0 0rem;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+    &.active {
+      font-weight: 700;
+      color: $blue;
+      line-height: 48px;
+      border-bottom: 2px $blue solid;
+    }
+  }
   nav {
     ul {
       display: flex;
       list-style: none;
     }
-
-    a {
-      display: flex;
-      align-items: center;
-      color: $black;
-      font-size: 1rem;
-      line-height: 50px;
-      padding: 0 .75rem;
-      margin: 0 0rem;
-      text-decoration: none;
-
-      &:hover {
-        color: $blue;
-      }
-      
-      &.active {
-        font-weight: 700;
-        color: $blue;
-        line-height: 48px;
-        border-bottom: 2px $blue solid;
-      }
-    }
-
     .menu-user {
       margin-left: 1rem;
-      padding-left: .75rem;
-      
+      padding-left: .25rem;
       &>a {
         border-left: 1px $light-grey solid;
+        padding-left: 1.50rem;
+        cursor: pointer;
       }
-
       .profile-picture {
         margin-right: .5rem;
       }
-
       svg {
         margin-left: .25rem;
         width: 24px;
         height: 24px;
         fill: $black;
       }
-
       &:hover {
         .dropdown {
           display: block;
         }
       }
-
       .dropdown {
         display: none;
         border-radius: 0 0 3px 3px;
@@ -366,7 +347,6 @@ div.nav-bar {
         margin-left: 1px;
         border-top: 1px $light-grey solid;
         background-color: $off-white-lighter;
-
         svg {
           transform: scale(0.75);
           margin-right: 6px;
@@ -374,6 +354,4 @@ div.nav-bar {
       }
     }
   }
-
 }
-
