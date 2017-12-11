@@ -388,7 +388,10 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     border-bottom: 1px #CED6DE solid;
-    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+    transition: max-height 120ms ease, 
+ padding-top 180ms ease, 
+ padding-bottom 180ms ease, 
+ border-bottom 180ms ease; }
   .event-filters .filter-container.expanded .filter-title svg {
     transform: rotate(0deg);
     transition: transform 120ms ease; }
@@ -409,7 +412,10 @@
     border-bottom: 0px #CED6DE solid;
     background-color: #F7FAFC;
     overflow: hidden;
-    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+    transition: max-height 120ms ease, 
+ padding-top 180ms ease, 
+ padding-bottom 180ms ease, 
+ border-bottom 180ms ease; }
     .event-filters .filter-content .distance-container, .event-filters .filter-content .when-row, .event-filters .filter-content .skill-level-row, .event-filters .filter-content .checkbox-wrapper {
       display: flex;
       align-items: center; }
@@ -782,6 +788,30 @@
   .create-event .moveElementDown:hover, .create-event .moveElementUp:hover {
     fill: #5a646d;
     cursor: pointer; }
+.event-card .event-info-container {
+  display: flex; }
+  .event-card .event-info-container .event-image {
+    flex: 0 0 35%;
+    margin: -1rem 1.4rem -1rem -1rem;
+    background-size: cover;
+    background-position: center; }
+  .event-card .event-info-container .event-info {
+    flex: 0 1 65%; }
+
+.event-card .icons-container {
+  display: flex;
+  flex-wrap: wrap; }
+  .event-card .icons-container .icon-box {
+    display: flex;
+    flex: 0 0 50%;
+    margin-bottom: 1rem; }
+    .event-card .icons-container .icon-box p {
+      padding: 0 1.25rem 0 1rem; }
+    .event-card .icons-container .icon-box svg {
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      fill: #434A51; }
 
 * {
   box-sizing: border-box;
