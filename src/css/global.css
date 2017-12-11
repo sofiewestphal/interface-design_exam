@@ -293,6 +293,47 @@
       padding: 1rem 3.5rem 1.25rem 3.5rem; }
   #homeBg .home-header {
     font-size: 4rem; }
+.u_clearfix {
+  clear: both; }
+
+.image-carousel {
+  width: 100%; }
+  .image-carousel .carousel-controls svg {
+    width: 60px;
+    height: 60px; }
+  .image-carousel .carousel-images {
+    position: relative;
+    height: 32vh;
+    overflow-x: hidden; }
+    .image-carousel .carousel-images .carousel-btns {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1;
+      height: 32vh;
+      display: flex;
+      align-items: center; }
+      .image-carousel .carousel-images .carousel-btns a {
+        padding: 1rem;
+        position: absolute; }
+        .image-carousel .carousel-images .carousel-btns a svg {
+          width: 24px;
+          height: 24px; }
+      .image-carousel .carousel-images .carousel-btns .previousBtn {
+        left: 0; }
+      .image-carousel .carousel-images .carousel-btns .nextBtn {
+        right: 0; }
+    .image-carousel .carousel-images img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      transition: transform .240s ease-out; }
+      .image-carousel .carousel-images img.active-image {
+        transform: translateX(0px); }
+      .image-carousel .carousel-images img.previous-image {
+        transform: translateX(-100%); }
+      .image-carousel .carousel-images img.upcoming-image {
+        transform: translateX(100%); }
 
 * {
   box-sizing: border-box;
