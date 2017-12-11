@@ -214,7 +214,6 @@
 .u_bold {
   font-weight: 700; }
 
-<<<<<<< HEAD
 .u_text-center {
   text-align: center; }
 
@@ -241,7 +240,6 @@
 
 .trophy.obtained svg {
   fill: #0B6AD6; }
-=======
 .breadcrumb {
   display: flex;
   align-items: center; }
@@ -266,7 +264,6 @@
       transform: scale(0.9);
       width: 24px;
       height: 24px; }
->>>>>>> Feature-breadcrumbs
 
 * {
   box-sizing: border-box;
