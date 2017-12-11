@@ -9,7 +9,8 @@
    .carousel-images{
       position: relative;
       height: 32vh;
-      overflow-x: hidden;
+      overflow:hidden;
+      user-select: none;
       .carousel-btns{
          position: absolute;
          width:100%;
