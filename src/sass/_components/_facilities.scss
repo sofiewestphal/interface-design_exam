@@ -1,0 +1,43 @@
+.facilities{
+   display: flex;
+   flex-wrap: wrap;
+   flex-grow:1;
+   flex-shrink:1;
+   flex-basis:100%;
+   margin-top:2rem;
+   .facility{
+      flex: 0 0 50%;
+      display: flex;
+      margin-bottom:2rem;
+      &:nth-child(odd) {
+         padding-right:1rem;
+      }
+      &:nth-child(even) {
+         padding-left:1rem;
+      }
+      .profile-picture{
+         flex-shrink: 0;
+      }
+      .facility-icon{
+         width:36px;
+         height:36px; 
+         background:$blue; 
+         border-radius:50%;
+         flex-shrink:0;
+         display:flex;
+         justify-content:center;
+         align-items:center;
+         svg{
+            fill:$white; 
+            width:24px;
+            height:24px; 
+         }
+      }
+      .facility-info{
+         margin-left: .75rem; 
+         h4{
+            line-height: .95rem; 
+         }
+      }
+   }     
+}

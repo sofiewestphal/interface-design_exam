@@ -8,6 +8,11 @@
 @import '_components/_event-filters.scss';
 @import '_components/_modal.scss';
 @import '_components/_event-statistics.scss';
+@import '_components/_speakers.scss';
+@import '_components/_facilities.scss';
+@import '_components/_about-event.scss';
+@import '_components/_description.scss';
+@import '_components/_comments.scss';
 
 * {
   box-sizing: border-box;
@@ -164,6 +169,14 @@ button {
     padding: 0.65rem 1.5rem 0.75rem 1.5rem;
     font-size: 1.15rem;
   }
+  &.small {
+   padding: 0.25rem .65rem 0.25rem .65rem;
+   font-size: .75rem;
+ }
+ &.block {
+    display:block;
+    width:100%;
+ }
 
   &.grey.outline {
     color: $medium-grey;

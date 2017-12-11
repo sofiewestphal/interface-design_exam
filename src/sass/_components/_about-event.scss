@@ -1,0 +1,16 @@
+.about-event{
+   display:flex;
+   flex-direction:column;
+   p{
+      font-size:.95rem;
+      display:flex;
+      line-height:1.2rem;
+      margin:.5rem 0;   
+      svg{
+         width:18px;
+         height:18px;
+         margin-right:.5rem;
+         fill:$dark-grey;
+      }
+   }
+}    
