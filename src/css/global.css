@@ -221,6 +221,12 @@
   display: block;
   margin: 0 auto; }
 
+.u_clearfix {
+  clear: both; }
+
+.u_v-align-top {
+  vertical-align: top; }
+
 .trophy .trophy-icon {
   width: 100%;
   max-width: 125px; }
@@ -240,6 +246,7 @@
 
 .trophy.obtained svg {
   fill: #0B6AD6; }
+
 .breadcrumb {
   display: flex;
   align-items: center; }
@@ -254,16 +261,14 @@
   .breadcrumb svg {
     fill: #434A51; }
     .breadcrumb svg.home {
-      transform: scale(0.7);
-      transform-origin: center;
-      width: 24px;
-      height: 24px; }
+      width: 16px;
+      height: 16px; }
     .breadcrumb svg.chevron {
       color: #65707A;
-      transform-origin: center;
-      transform: scale(0.9);
-      width: 24px;
-      height: 24px; }
+      width: 18px;
+      height: 18px;
+      margin-bottom: 2px; }
+
 #homeBg {
   background-image: url("../images/devent-home-bg.jpg");
   background-size: cover;
@@ -293,8 +298,6 @@
       padding: 1rem 3.5rem 1.25rem 3.5rem; }
   #homeBg .home-header {
     font-size: 4rem; }
-.u_clearfix {
-  clear: both; }
 
 .image-carousel {
   width: 100%; }
@@ -334,6 +337,7 @@
         transform: translateX(-100%); }
       .image-carousel .carousel-images img.upcoming-image {
         transform: translateX(100%); }
+
 @media screen and (max-width: 480px) {
   .my-profile .col-50.mobileFullWidth {
     flex-basis: calc(100% - 20px); } }
@@ -380,7 +384,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     border-bottom: 1px #CED6DE solid;
-    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
   .event-filters .filter-container.expanded .filter-title svg {
     transform: rotate(0deg);
     transition: transform 120ms ease; }
@@ -401,7 +405,7 @@
     border-bottom: 0px #CED6DE solid;
     background-color: #F7FAFC;
     overflow: hidden;
-    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
+    transition: max-height 120ms ease,  padding-top 180ms ease,  padding-bottom 180ms ease,  border-bottom 180ms ease; }
     .event-filters .filter-content .distance-container, .event-filters .filter-content .when-row, .event-filters .filter-content .skill-level-row, .event-filters .filter-content .checkbox-wrapper {
       display: flex;
       align-items: center; }
@@ -535,6 +539,7 @@
   .overlay svg {
     width: 1.5rem;
     height: 1.5rem; }
+
 .event-statistics .statistics-header {
   display: flex;
   justify-content: space-between; }
@@ -593,8 +598,6 @@
   background-color: #FFFFFF;
   border: 1px #CED6DE solid;
   border-radius: 2px; }
-.u_v-align-top {
-  vertical-align: top; }
 
 .speaker, .schedule-block {
   display: flex;
@@ -709,6 +712,7 @@
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap; }
+
 .create-event #boxBasicInformation input, .create-event #boxBasicInformation textarea, .create-event #boxBasicInformation select {
   border-style: none; }
 

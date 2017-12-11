@@ -20,18 +20,15 @@
         fill: $dark-grey;
 
         &.home{
-            transform: scale(.7);
-            transform-origin: center;
-            width: 24px;
-            height: 24px;
+            width: 16px;
+            height: 16px;
         }
-        
+         
         &.chevron{
             color: $medium-grey;
-            transform-origin: center;
-            transform: scale(0.9);
-            width: 24px;
-            height: 24px;
-       }
+            width: 18px;
+            height: 18px; 
+            margin-bottom: 2px;
+       } 
     }
 }
