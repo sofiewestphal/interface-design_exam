@@ -1,14 +1,12 @@
 @import '_utils/_vars.scss';
 @import '_utils/_utilities.scss';
-<<<<<<< HEAD
 @import '_components/_trophies.scss';
 @import '_components/breadcrumbs.scss';
 @import '_components/_home.scss';
 @import '_components/_carousel.scss';
 @import '_components/_my-profile.scss';
-=======
 @import '_components/_event-filters.scss';
->>>>>>> Feature-event-filters
+@import '_components/_modal.scss';
 
 * {
   box-sizing: border-box;
@@ -196,7 +194,6 @@ button {
     border-color: $orange;
   }
 }
-
 
 // Box
 .box {
