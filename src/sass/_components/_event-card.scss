@@ -1,3 +1,37 @@
+@media (max-width: $breakpoint-md) {
+  .event-card {
+    .event-info-container {
+      .event-image {
+        flex: 0 0 100%;
+        padding-bottom: 50%;
+        margin: -1rem -1rem 1rem -1rem;
+        border-radius: $border-radius 0 0 0;
+      }
+      .event-info {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-md + 1px) {
+  .event-card {
+    .event-info-container {
+      display: flex;
+      .event-image {
+        flex: 0 0 40%;
+        margin: -1rem 1.4rem -1rem -1rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: $border-radius 0 0 0;
+      }
+      .event-info {
+        flex: 0 1 60%;
+      }
+    }
+  }
+}
+
 .event-card {
   align-self: flex-start; // Prevents height-growth
   margin-bottom: 1rem;
@@ -7,23 +41,27 @@
   }
 
   .event-info-container {
-    display: flex;
     .event-image {
-      flex: 0 0 40%;
-      margin: -1rem 1.4rem -1rem -1rem; 
       background-size: cover;
       background-position: center;
       border-radius: $border-radius 0 0 0;
-    }
-    .event-info {
-      flex: 0 1 60%;
     }
   }
   .icons-container {
     display: flex;
     flex-wrap: wrap;
-    
-    @media (max-width: $breakpoint-lg) {
+
+    @media (max-width: $breakpoint-sm) {
+      .icon-box {
+        flex: 0 0 100%;
+      }
+    }
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1px) {
+      .icon-box {
+        flex: 0 0 50%;
+      }
+    }
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
       .icon-box {
         flex: 0 0 100%;
       }
@@ -34,12 +72,11 @@
       }
     }
 
-
     .icon-box {
       display: flex;
       // flex: 0 0 50%;
       margin-bottom: 1rem;
-      
+
       p {
         padding: 0 1.25rem 0 1rem;
       }

@@ -1,66 +1,112 @@
-.comment-section{
-   .new-comment{
-      display:flex;
-      .write-comment{
-         display:flex;
-         flex-grow:1;
-         align-items:flex-end;
-         align-content:flex-start;
-         textarea{
-            flex-grow:1;
-            min-height:6rem;
-            max-width:100%;
-            padding:.5rem;
-            border-radius:2px;
-            border:1px solid $light-grey;
-            resize: vertical;
-         }
-         button{
-            margin:0 1rem;
-            flex-basis:25%;
-         }
+@media screen and (max-width: $breakpoint-md) {
+  .new-comment {
+    .write-comment {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: flex-end;
+      textarea {
+        min-height: 6rem;
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        border-radius: $border-radius;
+        border: 1px solid $light-grey;
+        resize: vertical;
       }
-      .profile-picture{ 
-         margin-right:1rem;
+      button {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        flex-basis: 25%;
+        min-width: 150px;
       }
-   }
-   
-   .comment{
-      display:flex;
-      flex-grow:1;
-      align-items:flex-start;
-      align-content:flex-start;
-      flex-direction:column;
-      .comment-content{
-         display:flex;
-         margin-bottom:.5rem;
-         max-width: 850px;
-      }
-      .profile-picture{
-         margin-right:1rem; 
-         flex-shrink:0;
-      }
-      h4{
-         font-weight:bold;
-         small{
-            font-weight:normal;
-         }
-      }
-      p{
-         font-weight:normal;
-      }
-      .comment{
-         margin-left:calc(48px + 1rem);
-      }
-   }
+    }
+    .profile-picture {
+      display: none;
+    }
+  }
 
-   .action-bar{
-      border-width:2px !important; // Kunne ikke få den til at virke uden important. Ved ikke om det er vigtigt.  
-      .comments{
-         display:flex;
-         flex-grow:1;
-         flex-wrap:wrap; 
+  .comment-section {
+    .comment {
+      .profile-picture {
+        display: none;
       }
-   } 
+      .comment {
+        margin-left: 4%;
+      }
+    }
+  }
 }
 
+@media screen and (min-width: $breakpoint-md) {
+  .new-comment {
+    display: flex;
+    .write-comment {
+      display: flex;
+      flex-grow: 1;
+      align-items: flex-end;
+      align-content: flex-start;
+      textarea {
+        flex-grow: 1;
+        min-height: 6rem;
+        max-width: 100%;
+        padding: 0.5rem;
+        border-radius: 2px;
+        border: 1px solid $light-grey;
+        resize: vertical;
+      }
+      button {
+        margin: 0 1rem;
+        flex-basis: 25%;
+      }
+    }
+    .profile-picture {
+      margin-right: 1rem;
+    }
+  }
+
+  .comment-section {
+    .comment {
+      .profile-picture {
+        margin-right: 1rem;
+        flex-shrink: 0;
+      }
+      .comment {
+        margin-left: calc(48px + 1rem);
+      }
+    }
+  }
+}
+
+.comment-section {
+  .comment {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    .comment-content {
+      display: flex;
+      margin-bottom: 0.5rem;
+      max-width: 850px;
+    }
+
+    h4 {
+      font-weight: bold;
+      small {
+        font-weight: normal;
+      }
+    }
+    p {
+      font-weight: normal;
+    }
+  }
+
+  .action-bar {
+    .comments {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+    }
+  }
+}

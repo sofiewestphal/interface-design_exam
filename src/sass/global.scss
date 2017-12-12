@@ -1,23 +1,23 @@
-@import '_utils/_vars.scss';
-@import '_utils/_utilities.scss';
+@import "_utils/_vars.scss";
+@import "_utils/_utilities.scss";
 
 // Components
-@import '_components/_about-event.scss';
-@import '_components/_breadcrumbs.scss';
-@import '_components/_carousel.scss';
-@import '_components/_comments.scss';
-@import '_components/_create-event.scss';
-@import '_components/_event-card.scss';
-@import '_components/_event-filters.scss';
-@import '_components/_event-statistics.scss';
-@import '_components/_facilities.scss';
-@import '_components/_home.scss';
-@import '_components/_modal.scss';
-@import '_components/_my-profile.scss';
-@import '_components/_nav-bar.scss';
-@import '_components/_speakers.scss';
-@import '_components/_trophies.scss';
-@import '_components/_share-event.scss';
+@import "_components/_about-event.scss";
+@import "_components/_breadcrumbs.scss";
+@import "_components/_carousel.scss";
+@import "_components/_comments.scss";
+@import "_components/_create-event.scss";
+@import "_components/_event-card.scss";
+@import "_components/_event-filters.scss";
+@import "_components/_event-statistics.scss";
+@import "_components/_facilities.scss";
+@import "_components/_home.scss";
+@import "_components/_modal.scss";
+@import "_components/_my-profile.scss";
+@import "_components/_nav-bar.scss";
+@import "_components/_share-event.scss";
+@import "_components/_speakers.scss";
+@import "_components/_trophies.scss";
 
 * {
   box-sizing: border-box;
@@ -61,17 +61,28 @@ body {
       flex-grow: 1;
     }
   }
-  .col-33 {
-    flex-basis: calc(33.33% - 20px);
+
+  @media (min-width: $breakpoint-md + 1px) {
+    .col-33 {
+      flex-basis: calc(33.33% - 20px);
+    }
+    .col-50 {
+      flex-basis: calc(50% - 20px);
+    }
+    .col-66 {
+      flex-basis: calc(66.67% - 20px);
+    }
+    .col-100 {
+      flex-basis: calc(100% - 20px);
+    }
   }
-  .col-50 {
-    flex-basis: calc(50% - 20px);
-  }
-  .col-66 {
-    flex-basis: calc(66.67% - 20px);
-  }
-  .col-100 {
-    flex-basis: calc(100% - 20px);
+  @media (max-width: $breakpoint-md) {
+    .col-33,
+    .col-50,
+    .col-66,
+    .col-100 {
+      flex-basis: calc(100% - 20px);
+    }
   }
 }
 
@@ -87,12 +98,12 @@ body {
   }
 }
 
-// Fonts 
+// Fonts
 h1 {
   font-size: 2.4rem;
   font-family: $montserrat;
   font-weight: 500;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 h2 {
@@ -115,7 +126,7 @@ h4 {
   font-family: $openSans;
   font-weight: 400;
   font-size: 1.1rem;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 p {
@@ -125,13 +136,13 @@ p {
 
 p.meta {
   @extend h4;
-  font-size: .85rem;
+  font-size: 0.85rem;
   color: $medium-grey;
 }
 
 p.badge {
   @extend h4;
-  font-size: .85rem;
+  font-size: 0.85rem;
   color: $medium-grey;
   border: 1px $light-grey solid;
   border-radius: 2px;
@@ -195,8 +206,8 @@ a.button {
     font-size: 1.15rem;
   }
   &.small {
-    padding: 0.25rem .65rem 0.25rem .65rem;
-    font-size: .75rem;
+    padding: 0.25rem 0.65rem 0.25rem 0.65rem;
+    font-size: 0.75rem;
   }
   &.block {
     display: block;
@@ -213,7 +224,7 @@ a.button {
   }
   &.blue.outline {
     color: $blue;
-    border-color: $blue
+    border-color: $blue;
   }
   &.blue.fill {
     color: $white;
@@ -243,7 +254,7 @@ a.button {
   border-radius: 3px;
   padding: 1rem;
   background-color: $white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   .action-bar {
     margin: 1rem -1rem 0 -1rem;
     padding: 1rem 1rem 0 1rem;
