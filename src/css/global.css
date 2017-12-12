@@ -571,7 +571,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     border-bottom: 1px #CED6DE solid;
-    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
+    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
   .event-filters .filter-container.expanded .filter-title svg {
     transform: rotate(0deg);
     transition: transform 120ms ease; }
@@ -592,7 +592,7 @@
     border-bottom: 0px #CED6DE solid;
     background-color: #F7FAFC;
     overflow: hidden;
-    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
+    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
     .event-filters .filter-content .distance-container,
     .event-filters .filter-content .when-row,
     .event-filters .filter-content .skill-level-row,
@@ -1081,6 +1081,16 @@ div.nav-bar {
     div.nav-bar .burger-menu-toggle {
       display: none; } }
 
+.share a svg {
+  width: 18px;
+  height: 18px;
+  transform: translateY(3px); }
+
+.share .share-icons a svg {
+  fill: #434A51;
+  width: 28px;
+  height: 28px; }
+
 .speaker, .schedule-block {
   display: flex;
   margin: 2rem 0; }
@@ -1122,16 +1132,6 @@ div.col.trophy {
       right: 0; }
   div.col.trophy.obtained svg {
     fill: #0B6AD6; }
-
-.share a svg {
-  width: 18px;
-  height: 18px;
-  transform: translateY(3px); }
-
-.share .share-icons a svg {
-  fill: #434A51;
-  width: 28px;
-  height: 28px; }
 
 * {
   box-sizing: border-box;
