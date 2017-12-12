@@ -1,27 +1,47 @@
-.trophy{
-   .trophy-icon{
-      width:100%;
-      max-width:125px;
-   }
-   &:not(.obtained){
-      .check-div{
-         display:none;
+@media (max-width: $breakpoint-sm) {
+  div.col.trophy {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1px) {
+  div.col.trophy {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+@media (min-width: $breakpoint-lg + 1px) {
+  div.col.trophy {
+    flex: 0 0 calc(33% - 20px);
+  }
+}
+
+// div.col is needed to 'fight' the cascade. An alternative to using important though it creates
+// come markup-dependancy.
+div.col.trophy {
+  align-self: stretch; // Overwrites align-self: flex-start;
+
+  .trophy-icon {
+    width: 100%;
+    max-width: 125px;
+  }
+  &:not(.obtained) {
+    .check-div {
+      display: none;
+    }
+    svg {
+      fill: $medium-grey;
+    }
+  }
+  &.obtained {
+    .check-div {
+      position: relative;
+      .check-icon {
+        max-width: 50px;
+        position: absolute;
+        right: 0;
       }
-      svg{
-         fill:$medium-grey;      
-      }
-   }
-   &.obtained{
-      .check-div{
-         position:relative;
-         .check-icon{
-            max-width:50px;
-            position:absolute;
-            right:0;
-         }
-      }
-      svg{
-         fill:$blue;      
-      }
-   }
+    }
+    svg {
+      fill: $blue;
+    }
+  }
 }

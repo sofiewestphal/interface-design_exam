@@ -6,7 +6,7 @@ div.nav-bar {
   height: 50px;
   line-height: 50px;
   padding: 0 0 0 20px;
-  width: 100%;
+  width: 100vw;
   background-color: $white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   z-index: 4;
@@ -47,6 +47,7 @@ div.nav-bar {
       background-color: $off-white;
       padding: 10% 10%;
       overflow: auto;
+      -webkit-overflow-scrolling: touch;
       ul {
         display: block;
         list-style: none;

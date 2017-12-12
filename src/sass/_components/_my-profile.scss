@@ -1,70 +1,70 @@
-.my-profile{
+.my-profile {
+  .col-50 {
+    &.mobileFullWidth {
+      @media screen and (max-width: $breakpoint-sm) {
+        flex-basis: calc(100% - 20px);
+      }
+    }
+  }
 
-    .col-50 {   
-        &.mobileFullWidth {
-            @media screen and (max-width: $breakpoint-sm) {
-            flex-basis: calc(100% - 20px);        
-            }
-        }
+  svg {
+    min-width: 24px;
+    height: 24px;
+    width: 24px;
+    transform: scale(0.8);
+  }
+  .boxProfileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxEvent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .linkSeeMore {
+        margin-top: $baseSize;
+      }
+
+      > :last-child {
+        align-self: flex-end;
+      }
     }
 
-    svg {
-        height: 24px;
-        width: 24px;
-        transform: scale(0.8);
-    }
-    .boxProfileInfo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .linkSeeMore {
+      min-width: 125px;
     }
 
-    .boxEvent{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .iconText {
+      display: flex;
+    }
+  }
 
-        @media screen and (max-width: $breakpoint-sm) {
-            flex-direction: column;
-            align-items: flex-start;
+  .boxBottomLink {
+    display: flex;
+    justify-content: center;
+  }
 
-            .linkSeeMore{
-                margin-top: $baseSize;
-            }
-
-            > :last-child{
-                align-self: flex-end;
-            }
-        }
-
-        .linkSeeMore{
-            min-width: 125px;
-        }
-
-        .iconText{
-            display: flex;
-        }
+  .subscription {
+    h3 p {
+      display: inline-block;
+      vertical-align: baseline;
     }
 
-    .boxBottomLink {
-        display: flex;
-        justify-content: center;
-    }
-
-    .subscription {
-        h3 p {
-            display: inline-block;
-            vertical-align: baseline;
+    @media screen and (max-width: $breakpoint-md) {
+      .action-bar {
+        display: block;
+        a:first-child {
+          margin-bottom: 0.75rem;
         }
-
-        @media screen and (max-width: $breakpoint-md) {
-            .action-bar {
-                display: block;
-                a:first-child {
-                    margin-bottom: 0.75rem;
-                }
-            }
-        }
+      }
     }
+  }
 }
