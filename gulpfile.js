@@ -7,7 +7,8 @@ var gulp = require("gulp"),
   postcss = require("gulp-postcss"),
   cssnano = require("cssnano"),
   autoprefixer = require("autoprefixer"),
-  imagemin = require("gulp-imagemin");
+  imagemin = require("gulp-imagemin"),
+  removeHtmlComments = require('gulp-remove-html-comments');
 
 // Compiles sass
 gulp.task("sass", function() {
@@ -54,7 +55,7 @@ gulp.task("browserSync", function() {
 
 gulp.task("js-conc-min", function() {
   return gulp
-    .src("src/*.html")
+    .src("src/index.html")
     .pipe(useref())
     .pipe(gulpIf("*.js", uglify()))
     .pipe(gulp.dest("dist"));
@@ -67,3 +68,15 @@ gulp.task("watch", ["browserSync"], function() {
   gulp.watch("src/css/**/*.css", ["css-conc-min"]);
   gulp.watch("src/images/*", ["image-min"]);
 });
+
+gulp.task("move-html", function() {
+  return gulp.src('src/*.html')
+  .pipe( removeHtmlComments() )
+  .pipe(gulp.dest('dist'));
+})
+
+gulp.task("build",  ["sass", "css-conc-min", "image-min", "move-html"], function() {
+    gulp.start("js-conc-min");
+    console.log("build completed");
+  }
+);
