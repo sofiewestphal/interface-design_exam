@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devent</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Open+Sans" rel="stylesheet">
+  <!-- build:css css/bundle.css -->
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!-- Navbar logged in -->
+  <div class="nav-bar">
+    <a href="admin_index.html" class="logo">
+      <span class="u_bold">dev</span>ent
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="admin_manage-partners.html">Manage partners</a>
+        </li>
+        <li>
+          <a href="admin_create-event.html">Create event</a>
+        </li>
+        <li>
+          <a href="admin_find-events.html">Find event</a>
+        </li>
+        <li>
+          <a class="active" href="admin_my-events.html">My Events</a>
+        </li>
+        <li>
+          <a href="admin_trophies.html">Trophies</a>
+        </li>
+        <li class="menu-user">
+          <a>
+            <div class="profile-picture xs" style="background-image: url('images/user_01.jpg');"></div>
+            Martin Christensen
+            <svg>
+              <use xlink:href="#md-arrow-drop-down"></use>
+            </svg>
+          </a>
+          <div class="box dropdown">
+            <a href="admin_my-profile.html">
+              <svg>
+                <use xlink:href="#md-person"></use>
+              </svg>
+              My profile
+            </a>
+            <a href="index.html">
+              <svg>
+                <use xlink:href="#md-sign-out"></use>
+              </svg>
+              Log out
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger-menu-toggle open">
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#md-menu"></use>
+      </svg>
+    </div>
+    <div class="burger-menu-toggle close">
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#md-close"></use>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Page content -->
+  <div class="u_mt-xl container small">
+    <!-- Events your are organizing -->
+    <h2 class="u_mb-sm">Event you are organizing
+      <small>1</small>
+    </h2>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_01.jpg')"></div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">JS Meetup # 3</h2>
+          <p class="badge u_mb-md">Looking for speakers</p>
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">Nørrebrogade 94, 1tv. København N</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">21 people are going, 42 available seates</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">3/10-2018, from 16:00 to 18:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: Intermediate</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">Free</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: Yousee A/s</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Delete
+          </div>
+          <svg>
+            <use xlink:href="#md-delete"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            Edit
+          </div>
+          <svg>
+            <use xlink:href="#md-edit"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Favorited events -->
+    <h2 class="u_mb-sm u_mt-xxl">Favorited events
+      <small>1</small>
+    </h2>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_01.jpg')"></div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">JS Meetup # 3</h2>
+          <p class="badge u_mb-md">Looking for speakers</p>
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">Nørrebrogade 94, 1tv. København N</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">21 people are going, 42 available seates</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">3/10-2018, from 16:00 to 18:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: Intermediate</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">Free</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: Yousee A/s</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Favorited
+          </div>
+          <svg>
+            <use xlink:href="#md-favorite-fill"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Upcomming events events -->
+    <h2 class="u_mb-sm u_mt-xxl">Upcomming events you are attending
+      <small>3</small>
+    </h2>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_01.jpg')"></div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">JS Meetup # 3</h2>
+          <p class="badge u_mb-md">Looking for speakers</p>
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">Nørrebrogade 94, 1tv. København N</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">21 people are going, 42 available seates</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">3/10-2018, from 16:00 to 18:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: Intermediate</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">Free</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: Yousee A/s</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Favorited
+          </div>
+          <svg>
+            <use xlink:href="#md-favorite-fill"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_02.jpg')">
+
+        </div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">PHP mini conf</h2>
+          <p class="badge u_mb-md">Looking for sponsors</p>
+
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">Larslejsstræde 22, København K</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">12 people are going, 32 available seates</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">4/11-2018, from 14:00 to 16:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: Intermediate</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">Free</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: Pentia</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Favorited
+          </div>
+          <svg>
+            <use xlink:href="#md-favorite-fill"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_03.jpg')">
+        </div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">CSS CONF 2018</h2>
+
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">KEA, lygten 16, København NV</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">124 people are going, 33 available seates</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">4/10-2018, from 12:00 to 22:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: beginner</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">50 DKK</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: W3C, CodePen.io, Mozilla Foundation</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Favorited
+          </div>
+          <svg>
+            <use xlink:href="#md-favorite-fill"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Attended events -->
+    <h2 class="u_mb-sm u_mt-xl">Attended events
+      <small>21</small>
+    </h2>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_03.jpg')">
+        </div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">CSS CONF 2017</h2>
+
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">KEA, lygten 16, København NV</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">85 people went</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">4/10-2017, from 12:00 to 22:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: beginner</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">50 DKK</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: W3C, CodePen.io, Mozilla Foundation</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Favorited
+          </div>
+          <svg>
+            <use xlink:href="#md-favorite-fill"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_03.jpg')">
+        </div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">CSS CONF 2016</h2>
+
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">KEA, lygten 16, København NV</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">74 people went</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">4/10-2016, from 12:00 to 22:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: beginner</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">50 DKK</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: W3C, CodePen.io, Mozilla Foundation</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Favorited
+          </div>
+          <svg>
+            <use xlink:href="#md-favorite-fill"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="box event-card">
+      <div class="event-info-container">
+        <div class="event-image" style="background-image: url('images/event_03.jpg')">
+        </div>
+        <div class="event-info">
+          <h2 class="u_mb-sm">CSS CONF 2015</h2>
+
+          <div class="icons-container">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">KEA, lygten 16, København NV</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-people"></use>
+              </svg>
+              <p class="meta">68 people went</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-place"></use>
+              </svg>
+              <p class="meta">4/10-2015, from 12:00 to 22:00</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-school"></use>
+              </svg>
+              <p class="meta">Skill level: beginner</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-attach-money"></use>
+              </svg>
+              <p class="meta">50 DKK</p>
+            </div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#md-business"></use>
+              </svg>
+              <p class="meta">Sponsors: W3C, CodePen.io, Mozilla Foundation</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <a href="" class="big u_mr-sm">
+          <div>
+            Favorite
+          </div>
+          <svg>
+            <use xlink:href="#md-favorite"></use>
+          </svg>
+        </a>
+        <a href="admin_event.html" class="big u_mr-sm">
+          <div>
+            See more
+          </div>
+          <svg>
+            <use xlink:href="#md-arrow-forward"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <a class="big u_justify-content-center u_mt-md u_mb-xl" href="">See 23 More...</a>
+  </div>
+
+  <!-- build:js js/bundle.js -->
+  <script src="js/burger-menu.js"></script>
+  <!-- endbuild -->
+
+  <!-- Icons -->
+  <svg class="u_hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <g id="md-menu">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+      </g>
+      <g id="md-edit">
+        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+        />
+      </g>
+      <g id="md-delete">
+        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+      </g>
+      <g id="md-close">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+      </g>
+      <g id="md-search">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </g>
+      <g id="md-favorite">
+        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+        />
+      </g>
+      <g id="md-favorite-fill">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+        />
+      </g>
+      <g id="md-arrow-forward">
+        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+      </g>
+      <g id="md-arrow-drop-down">
+        <path d="M7 10l5 5 5-5z" />
+      </g>
+      <g id="md-person">
+        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+      </g>
+      <g id="md-sign-out">
+        <polygon points="18.3,8 18.3,11 7.3,11 7.3,13 18.3,13 18.3,16 22.3,12 	" />
+        <path d="M13,19H3V5h10v4.3h2V5c0-1.1-0.9-2-2-2H3C1.9,3,1,3.9,1,5v14c0,1.1,0.9,2,2,2h10c1.1,0,2-0.9,2-2v-4.4h-2V19z" />
+      </g>
+      <g id="md-place">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+        />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </g>
+      <g id="md-date-range">
+        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+        />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </g>
+      <g id="md-attach-money">
+        <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+        />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </g>
+      <g id="md-people">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+        />
+      </g>
+      <g id="md-school">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+      </g>
+      <g id="md-business">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+        />
+      </g>
+    </defs>
+  </svg>
+
+</body>
+
+</html>

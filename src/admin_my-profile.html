@@ -14,22 +14,25 @@
 <body>
   <!-- Navbar logged in -->
   <div class="nav-bar">
-    <a href="index_logged-in.html" class="logo">
+    <a href="admin_index.html" class="logo">
       <span class="u_bold">dev</span>ent
     </a>
     <nav>
       <ul>
         <li>
-          <a href="create-event.html">Create event</a>
+          <a href="admin_manage-partners.html">Manage partners</a>
         </li>
         <li>
-          <a href="find-events_logged-in.html">Find event</a>
+          <a href="admin_create-event.html">Create event</a>
         </li>
         <li>
-          <a href="my-events.html">My Events</a>
+          <a href="admin_find-events.html">Find event</a>
         </li>
         <li>
-          <a href="trophies.html">Trophies</a>
+          <a href="admin_my-events.html">My Events</a>
+        </li>
+        <li>
+          <a href="admin_trophies.html">Trophies</a>
         </li>
         <li class="menu-user">
           <a>
@@ -40,7 +43,7 @@
             </svg>
           </a>
           <div class="box dropdown">
-            <a href="my-profile.html">
+            <a href="admin_my-profile.html">
               <svg>
                 <use xlink:href="#md-person"></use>
               </svg>
@@ -68,11 +71,12 @@
     </div>
   </div>
 
+  <!-- Page content -->
   <div class="my-profile u_mt-xl">
     <div class="grid-container small ">
       <div class="col col-100 boxProfileInfo">
-        <div class="profile-picture xl" style="background-image: url('images/user_01.jpg')"></div>
-        <h1 class="u_mt-md">Henning Jensen</h1>
+        <div class="profile-picture xl" style="background-image: url('images/admin_01.jpg')"></div>
+        <h1 class="u_mt-md">Martin Christensen</h1>
         <p class="meta u_my-md">
           Member since 22. October 2016, Attended 25 events
         </p>
@@ -80,146 +84,6 @@
           Im a danish developer interested in Node and React. Im a big fan og Redux and in posuere augue eu nibh eleifend, quis dapibus
           nunc suscipit. Nulla in tellus at risus eleifend efficitur semper eget diam.​​​​​​​
         </p>
-      </div>
-    </div>
-
-    <div>
-      <div class="u_mt-xl container small u_mb-md">
-        <h2>Upcoming Events
-          <small>4</small>
-        </h2>
-      </div>
-
-      <div class="grid-container small">
-        <div class="box col col-100 boxEvent">
-          <div>
-            <h3 class="u_mb-md">JS Meetup #14</h3>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-date-range"></use>
-              </svg>
-              <p class="u_ml-xs">3. October 2018, From 16:00 to 20:00</p>
-            </div>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-people"></use>
-              </svg>
-              <p class="u_ml-xs">54 people going</p>
-            </div>
-          </div>
-          <div>
-            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
-              <div>
-                See more
-              </div>
-              <svg>
-                <use xlink:href="#md-arrow-forward"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="box col col-100 boxEvent">
-          <div>
-            <h3 class="u_mb-md">JS Meetup #15</h3>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-date-range"></use>
-              </svg>
-              <p class="u_ml-xs">3. December 2018, From 16:00 to 20:00</p>
-            </div>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-people"></use>
-              </svg>
-              <p class="u_ml-xs">21 people going</p>
-            </div>
-          </div>
-          <div>
-            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
-              <div>
-                See more
-              </div>
-              <svg>
-                <use xlink:href="#md-arrow-forward"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container small u_mb-md boxBottomLink">
-        <a class="big" href="">See 2 More...</a>
-      </div>
-    </div>
-
-
-    <div>
-      <div class="u_mt-xl container small u_mb-md">
-        <h2>Previous Events
-          <small>25</small>
-        </h2>
-      </div>
-
-      <div class="grid-container small">
-        <div class="box col col-100 boxEvent">
-          <div>
-            <h3 class="u_mb-md">JS Meetup #13</h3>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-date-range"></use>
-              </svg>
-              <p class="u_ml-xs">3. December 2017, From 16:00 to 20:00</p>
-            </div>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-people"></use>
-              </svg>
-              <p class="u_ml-xs">67 people going</p>
-            </div>
-          </div>
-          <div>
-            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
-              <div>
-                See more
-              </div>
-              <svg>
-                <use xlink:href="#md-arrow-forward"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="box col col-100 boxEvent">
-          <div>
-            <h3 class="u_mb-md">JS Meetup #12</h3>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-date-range"></use>
-              </svg>
-              <p class="u_ml-xs">3. October 2017, From 16:00 to 20:00</p>
-            </div>
-            <div class="iconText u_mb-xs">
-              <svg>
-                <use xlink:href="#md-people"></use>
-              </svg>
-              <p class="u_ml-xs">49 people going</p>
-            </div>
-          </div>
-          <div>
-            <a href="event_logged-in.html" class="big linkSeeMore u_ml-sm">
-              <div>
-                See more
-              </div>
-              <svg>
-                <use xlink:href="#md-arrow-forward"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container small u_mb-md boxBottomLink">
-        <a class="big" href="">See 23 More...</a>
       </div>
     </div>
 
@@ -269,15 +133,11 @@
     </div>
   </div>
 
-
-
-
-
   <!-- build:js js/bundle.js -->
   <script src="js/burger-menu.js"></script>
   <!-- endbuild -->
 
-
+  <!-- Icons -->
   <svg class="u_hidden" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <g id="md-menu">

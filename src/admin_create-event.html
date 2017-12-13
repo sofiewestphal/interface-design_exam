@@ -14,22 +14,25 @@
 <body>
 	<!-- Navbar logged in -->
 	<div class="nav-bar">
-		<a href="index_logged-in.html" class="logo">
+		<a href="admin_index.html" class="logo">
 			<span class="u_bold">dev</span>ent
 		</a>
 		<nav>
 			<ul>
 				<li>
-					<a class="active" href="create-event.html">Create event</a>
+					<a href="admin_manage-partners.html">Manage partners</a>
 				</li>
 				<li>
-					<a href="find-events_logged-in.html">Find event</a>
+					<a class="active" href="admin_create-event.html">Create event</a>
 				</li>
 				<li>
-					<a href="my-events.html">My Events</a>
+					<a href="admin_find-events.html">Find event</a>
 				</li>
 				<li>
-					<a href="trophies.html">Trophies</a>
+					<a href="admin_my-events.html">My Events</a>
+				</li>
+				<li>
+					<a href="admin_trophies.html">Trophies</a>
 				</li>
 				<li class="menu-user">
 					<a>
@@ -40,7 +43,7 @@
 						</svg>
 					</a>
 					<div class="box dropdown">
-						<a href="my-profile.html">
+						<a href="admin_my-profile.html">
 							<svg>
 								<use xlink:href="#md-person"></use>
 							</svg>
@@ -56,7 +59,6 @@
 				</li>
 			</ul>
 		</nav>
-
 		<div class="burger-menu-toggle open">
 			<svg viewBox="0 0 24 24">
 				<use xlink:href="#md-menu"></use>
@@ -68,6 +70,8 @@
 			</svg>
 		</div>
 	</div>
+
+	<!-- Page content -->
 	<div class="create-event">
 		<div class="container small u_mb-xl u_mt-xl">
 			<h1>Create Event</h1>
@@ -255,8 +259,8 @@
 		</div>
 
 		<div class="container small u_mb-xl u_mt-xl u_text-right">
-			<a href="event.html" class="button blue outline large">Preview</a>
-			<a href="event-organizer.html" class="button blue fill large">Create Event</a>
+			<a href="admin_event.html" class="button blue outline large">Preview</a>
+			<a href="admin_event.html" class="button blue fill large">Create Event</a>
 		</div>
 	</div>
 
@@ -265,6 +269,7 @@
 	<script src="js/burger-menu.js"></script>
 	<!-- endbuild -->
 
+	<!-- Icons -->
 	<svg class="u_hidden" xmlns="http://www.w3.org/2000/svg">
 		<defs>
 			<g id="md-favorite">

@@ -172,6 +172,9 @@
 .u_mt-xl {
   margin-top: 40px !important; }
 
+.u_mt-xxl {
+  margin-top: 80px !important; }
+
 .u_ml-xs {
   margin-left: 8px !important; }
 
@@ -1081,6 +1084,15 @@ div.nav-bar {
           margin-right: 6px; }
     div.nav-bar .burger-menu-toggle {
       display: none; } }
+
+.partner-card {
+  margin-bottom: 1rem; }
+  .partner-card .grid-container {
+    margin: 0 -0.5rem; }
+    .partner-card .grid-container .col {
+      margin-bottom: 0px; }
+    .partner-card .grid-container .meta {
+      margin-bottom: 1.5rem; }
 
 .share a svg {
   width: 18px;
