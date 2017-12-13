@@ -8,6 +8,8 @@ var gulp = require("gulp"),
   cssnano = require("cssnano"),
   autoprefixer = require("autoprefixer"),
   imagemin = require("gulp-imagemin"),
+  htmlmin = require('gulp-htmlmin'),
+  gulpSequence = require('gulp-sequence'),
   removeHtmlComments = require('gulp-remove-html-comments');
 
 // Compiles sass
@@ -19,22 +21,20 @@ gulp.task("sass", function() {
     .pipe(browserSync.stream());
 });
 
-// Make production build of css
+// Make production build of css and html
+var plugins = [
+  autoprefixer({ browsers: ["last 1 version"] }), 
+  cssnano()
+];
 gulp.task("css-conc-min", function() {
-  var plugins = [autoprefixer({ browsers: ["last 1 version"] }), cssnano()];
   return gulp
     .src("src/*.html")
-    .pipe(useref())
+    .pipe(gulpIf("*.html", useref()))
     .pipe(gulpIf("*.css", postcss(plugins)))
+    .pipe(gulpIf("*.html", removeHtmlComments()))
+    .pipe(gulpIf("*.html", htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest("dist"));
 });
-
-// Copy fonts
-// Only needed if we want to host our own font files.
-// gulp.task('copy-fonts', function() {
-// return gulp.src('src/**/*.otf')
-// .pipe(gulp.dest('dist'))
-// })
 
 gulp.task("image-min", function() {
   return gulp
@@ -69,14 +69,13 @@ gulp.task("watch", ["browserSync"], function() {
   gulp.watch("src/images/*", ["image-min"]);
 });
 
-gulp.task("move-html", function() {
-  return gulp.src('src/*.html')
-  .pipe( removeHtmlComments() )
-  .pipe(gulp.dest('dist'));
-})
-
-gulp.task("build",  ["sass", "css-conc-min", "image-min", "move-html"], function() {
-    gulp.start("js-conc-min");
-    console.log("build completed");
-  }
-);
+gulp.task("build",  ["sass", "image-min"], function() {
+  return gulp
+    .src("src/*.html")
+    .pipe(gulpIf("index.html", useref()))
+    .pipe(gulpIf("*.css", postcss(plugins)))
+    .pipe(gulpIf("*.html", removeHtmlComments()))
+    .pipe(gulpIf("*.html", htmlmin({collapseWhitespace: true})))
+    .pipe(gulpIf("*.js", uglify()))
+    .pipe(gulp.dest("dist"))
+});
