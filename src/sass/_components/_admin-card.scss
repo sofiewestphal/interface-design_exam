@@ -1,0 +1,30 @@
+.admin-card{
+   input{
+      border: 1px solid $light-grey;
+      border-radius: $border-radius;
+      outline:0px;
+      padding: .5rem;
+      width:100%;
+   }
+
+   a.button{
+      svg{
+         position: initial;
+         transform: translateX(0px);
+      }
+      &.blue svg{
+         fill:$blue; 
+      }
+   }
+   margin-bottom: 1rem;
+   .admin-content{
+      display:flex;
+      .profile-picture{
+         margin-right:1rem;
+      }
+      .admin-info{
+         flex-grow: 1;
+      }
+   }
+
+} 

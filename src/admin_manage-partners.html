@@ -18,47 +18,60 @@
       <span class="u_bold">dev</span>ent
     </a>
     <nav>
-      <ul>
-        <li>
-          <a class="active" href="admin_manage-partners.html">Manage partners</a>
-        </li>
-        <li>
-          <a href="admin_create-event.html">Create event</a>
-        </li>
-        <li>
-          <a href="admin_find-events.html">Find event</a>
-        </li>
-        <li>
-          <a href="admin_my-events.html">My Events</a>
-        </li>
-        <li>
-          <a href="admin_trophies.html">Trophies</a>
-        </li>
-        <li class="menu-user">
-          <a>
-            <div class="profile-picture xs" style="background-image: url('images/user_01.jpg');"></div>
-            Martin Christensen
-            <svg>
-              <use xlink:href="#md-arrow-drop-down"></use>
-            </svg>
-          </a>
-          <div class="box dropdown">
-            <a href="admin_my-profile.html">
-              <svg>
-                <use xlink:href="#md-person"></use>
-              </svg>
-              My profile
-            </a>
-            <a href="index.html">
-              <svg>
-                <use xlink:href="#md-sign-out"></use>
-              </svg>
-              Log out
-            </a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+         <ul>
+            <li class="dropdown-menu menu-manage">
+               <a class="active no-border">
+                  Manage
+                  <svg>
+                     <use xlink:href="#md-arrow-drop-down"></use>
+                  </svg>
+               </a>
+               <div class="box dropdown">
+                  <a href="admin_manage-admins.html">
+                     Admins
+                  </a>
+                  <a class="active" href="admin_manage-partners.html">
+                     Partners
+                  </a>
+               </div>
+            </li>
+            <li>
+               <a href="admin_create-event.html">Create event</a>
+            </li>
+            <li>
+               <a href="admin_find-events.html">Find event</a>
+            </li>
+            <li>
+               <a href="admin_my-events.html">My Events</a>
+            </li>
+            <li>
+               <a href="admin_trophies.html">Trophies</a>
+            </li>
+            <li class="dropdown-menu menu-user">
+               <a>
+                  <div class="profile-picture xs" style="background-image: url('images/user_01.jpg');"></div>
+                  Martin Christensen
+                  <svg viewBox="0 0 24 24">
+                     <use xlink:href="#md-arrow-drop-down"></use>
+                  </svg>
+               </a>
+               <div class="box dropdown">
+                  <a href="admin_my-profile.html">
+                     <svg>
+                        <use xlink:href="#md-person"></use>
+                     </svg>
+                     My profile
+                  </a>
+                  <a href="index.html">
+                     <svg>
+                        <use xlink:href="#md-sign-out"></use>
+                     </svg>
+                     Log out
+                  </a>
+               </div>
+            </li>
+         </ul>
+      </nav>
     <div class="burger-menu-toggle open">
       <svg viewBox="0 0 24 24">
         <use xlink:href="#md-menu"></use>
