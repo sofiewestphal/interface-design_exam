@@ -572,7 +572,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     border-bottom: 1px #CED6DE solid;
-    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
+    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
   .event-filters .filter-container.expanded .filter-title svg {
     transform: rotate(0deg);
     transition: transform 120ms ease; }
@@ -593,7 +593,7 @@
     border-bottom: 0px #CED6DE solid;
     background-color: #F7FAFC;
     overflow: hidden;
-    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
+    transition: max-height 120ms ease, padding-top 180ms ease, padding-bottom 180ms ease, border-bottom 180ms ease; }
     .event-filters .filter-content .distance-container,
     .event-filters .filter-content .when-row,
     .event-filters .filter-content .skill-level-row,
