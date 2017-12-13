@@ -72,10 +72,10 @@ gulp.task("watch", ["browserSync"], function() {
 gulp.task("build",  ["sass", "image-min"], function() {
   return gulp
     .src("src/*.html")
-    .pipe(gulpIf("index.html", useref()))
+    .pipe(gulpIf("*.html", useref()))
     .pipe(gulpIf("*.css", postcss(plugins)))
+    .pipe(gulpIf("*.js", uglify()))
     .pipe(gulpIf("*.html", removeHtmlComments()))
     .pipe(gulpIf("*.html", htmlmin({collapseWhitespace: true})))
-    .pipe(gulpIf("*.js", uglify()))
     .pipe(gulp.dest("dist"))
 });
